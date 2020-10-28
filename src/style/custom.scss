@@ -1,0 +1,80 @@
+body {
+    /* cursor: url(../img/cursor.svg) 15 15, default; */
+    cursor: url(../img/cursor.svg) 15 15, default;
+}
+
+*:hover {
+    cursor: url(../img/cursor.svg) 15 15, default;
+}
+
+#starts {
+    width: 100%;
+    height: 100%;
+}
+
+#cursor-follow {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    /* opacity: 0.3; */
+    position: fixed;
+    top: -60px;
+    left: -60px;
+    z-index: 999;
+    /* transition: top .4s cubic-bezier(.23, 1, .32, 1) 0ms, left .4s cubic-bezier(.23, 1, .32, 1) 0ms, width .4s cubic-bezier(.23, 1, .32, 1) 0ms, height .4s cubic-bezier(.23, 1, .32, 1) 0ms, border .4s cubic-bezier(.23, 1, .32, 1) 0ms, border-radius .4s cubic-bezier(.23, 1, .32, 1) 0ms, transform .4s cubic-bezier(.18, .89, .32, 1.28) 0ms, background .4s cubic-bezier(.18, .89, .32, 1.28) 0ms; */
+    border-radius: 50%;
+    transition: width .4s, height .4s, transform .25s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0 4px rgba(255, 255, 255, 0.55);
+    user-select: none;
+    pointer-events: none;
+}
+
+#cursor-follow.active {
+    transform: scale(1.4);
+    box-shadow: 0px 0 20px rgba(255, 255, 255, 0.4);
+    opacity: 0.2;
+
+}
+
+.s2 {
+    /* padding-top: 80px;
+    align-items: flex-start!important; */
+}
+
+.s1__row {
+    position: relative;
+    display: flex;
+}
+
+.s1__image {
+    position: absolute;
+    width: 60%;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 991px) {
+    .s1__image {
+        /* display: none; */
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    .s1__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.galaxy,
+.header__box,
+.s1__box{
+    visibility: hidden;
+    opacity: 0;
+}
