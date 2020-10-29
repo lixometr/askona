@@ -517,8 +517,8 @@
 	}
 
 	.s3__bg img:nth-child(2) {
-		width: 1000px;
-		transform: translate(55.6%, -19.9%);
+		width: 600px;
+		transform: translate(30.6%, -5%);
 	}
 
 	.s4 {
@@ -682,8 +682,11 @@
 	}
 
 	.s6 {
-		padding: 0 0 0;
-		height: auto;
+		// padding: 0 0 0;
+		// height: auto;
+		&::before {
+			// z-index: 0;
+		}
 	}
 
 	.s6__title {
@@ -781,7 +784,9 @@
 	}
 
 	.s7 {
-		padding:  0 0;
+		// padding: 0 0;
+		padding-bottom: 50px;
+		margin-bottom: -1px;
 		height: auto;
 	}
 
@@ -857,7 +862,7 @@
 
 
 	.s8 {
-		padding: 251px 0 78px;
+		padding: 50 0 78px;
 		height: auto;
 	}
 

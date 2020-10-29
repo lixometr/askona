@@ -1,0 +1,221 @@
+//
+// Menu icon animation prototype
+// @mikebusby
+//
+
+$menu_color: #fff;
+$cubic-bezier: cubic-bezier(0.30, 1.40, 0.70, 1);
+
+@mixin center($s) {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: $s;
+    height: $s;
+}
+
+// -------------------------
+
+.menu-icon {
+    // @include center(18px);
+    height: 5px;
+    width: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+    span {
+        position: relative;
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: $menu_color;
+
+
+        transition: transform .2s ease,
+            top .2s $cubic-bezier .2s,
+            bottom .2s $cubic-bezier .2s;
+
+        &:first-of-type {
+            top: -3px;
+        }
+
+        &:last-of-type {
+            bottom: -3px;
+        }
+
+    }
+
+    // span
+
+    // Active state for the menu
+    &.active span {
+
+        transition: transform .2s ease .2s,
+            top .2s $cubic-bezier,
+            bottom .2s $cubic-bezier;
+
+        &:first-of-type {
+            transform: rotate(45deg);
+            top: 1px;
+        }
+
+        &:last-of-type {
+            transform: rotate(-45deg);
+            bottom: 1px;
+        }
+
+    }
+
+    // active
+
+}
+
+// menu-icon
+
+// -------------------------
+
+// Not used in production, only here for awesomeness
+.ring {
+    border: 2px solid rgba($menu_color, .1);
+    border-radius: 30px;
+    height: 25px;
+    width: 25px;
+    opacity: 0;
+    @include center(50px);
+
+    &.run {
+        animation: pulse .8s ease 1;
+
+    }
+}
+
+
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(.1, .1);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5, 1.5);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        transform: scale(.1, .1);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5, 1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.1, .1);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5, 1.5);
+        opacity: 0;
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #1C1D21;
+}
+
+.wrapper-all {
+    position: relative;
+    overflow-x: hidden;
+    z-index: 1;
+    transition: .5s;
+
+}
+
+.temp-wrapper-all {
+    height: 100vh;
+    overflow: auto;
+    transform: scale(1);
+
+    transition:  .3s;
+}
+
+.nav-open .temp-wrapper-all {
+    //   overflow: hidden;
+    // width: 70%;
+    // transform: scaleX(0.8);
+
+}
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    display: table;
+    background: #26292f url('../img/bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+
+
+
+
+.overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1C1D21;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+}
+
+.nav-open .overlay {
+    opacity: .6;
+    visibility: visible;
+}

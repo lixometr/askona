@@ -1,3 +1,4 @@
+const throttle = require("lodash.throttle")
 
 /**
  * autoAlfa: 0
@@ -15,6 +16,18 @@ gsap.to('.galaxy', {
     },
     y: -300
 })
+gsap.to('.s1__box', {
+    scrollTrigger: {
+        trigger: ".s1",
+        pin: false,
+        start: "top top",
+        end: "+=400",
+        scrub: true, // fix can be in seconds (smooth delay)
+        // once: true
+
+    },
+    y: -100
+})
 gsap.to('.s1__image', {
     scrollTrigger: {
         trigger: ".s1",
@@ -26,18 +39,6 @@ gsap.to('.s1__image', {
 
     },
     y: 40
-})
-gsap.to('.s1__box', {
-    scrollTrigger: {
-        trigger: ".s1",
-        pin: false,
-        start: "top top",
-        end: "+=200",
-        scrub: true, // fix can be in seconds (smooth delay)
-        // once: true
-
-    },
-    y: 100
 })
 
 
@@ -92,6 +93,17 @@ gsap.to('#stars', {
     opacity: 0
 })
 
-// import throttle from "lodash.throttle"
 
-// $(window).on('scroll', checkgalaxy)
+function checkGalaxy() {
+    const ofTop = $('.s5').offset().top
+    const nowScrollTop = $(window).scrollTop()
+    if (nowScrollTop >= ofTop) {
+        $('#stars').hide()
+    } else {
+        $('#stars').show()
+
+    }
+
+}
+checkGalaxy()
+$(window).on('scroll', throttle(checkGalaxy, 200))

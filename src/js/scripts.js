@@ -25,7 +25,8 @@ require('./cursorFollow')
 require('./slider1')
 require('./slider2')
 require('./parallax')
-
+require('./fullpage')
+require('./menu')
 let prevScroll = $(window).scrollTop()
 $(window).on('scroll', e => {
     const nowScrollTop = $(window).scrollTop()
