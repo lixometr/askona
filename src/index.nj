@@ -75,7 +75,7 @@
 					<a href="#askona" class="scroll-link header__link">Розыгрыш ОТ АSKONA</a>
 				</li>
 				<li>
-					<a href="#how-to-take-part" class="scroll-link header__link" data-offset="300">Как участвовать?</a>
+					<a href="#how-to-take-part" class="scroll-link header__link" data-offset="100">Как участвовать?</a>
 				</li>
 				<li>
 					<a href="#interaktiv" class="scroll-link header__link">Интерактивная выставка</a>
