@@ -22,7 +22,7 @@ $cubic-bezier: cubic-bezier(0.30, 1.40, 0.70, 1);
 .menu-icon {
     // @include center(18px);
     height: 5px;
-    width: 18px;
+    width: 30px;
     position: absolute;
     top: 0;
     right: 0;
@@ -33,8 +33,8 @@ $cubic-bezier: cubic-bezier(0.30, 1.40, 0.70, 1);
     span {
         position: relative;
         display: block;
-        width: 18px;
-        height: 2px;
+        width: 30px;
+        height: 1px;
         background-color: $menu_color;
 
 
@@ -43,11 +43,11 @@ $cubic-bezier: cubic-bezier(0.30, 1.40, 0.70, 1);
             bottom .2s $cubic-bezier .2s;
 
         &:first-of-type {
-            top: -3px;
+            top: -4px;
         }
 
         &:last-of-type {
-            bottom: -3px;
+            bottom: -4px;
         }
 
     }

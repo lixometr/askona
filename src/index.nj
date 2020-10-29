@@ -31,6 +31,10 @@
 				<li class="switcher__item"></li>
 				<li class="switcher__item"></li>
 			</ul>
+			<a href="#" class="bottom-btn">
+			{% include "./img/arrow_bottom.svg" %}
+			</a>
+
 			<ul class="socials">
 				<li>
 					<a href="#" target="_blank"><img src="img/social/vk.svg" alt=""></a>
@@ -103,7 +107,6 @@
 						</div>
 					</div>
 				</div>
-				<a href="#" class="bottom-btn"></a>
 			</div>
 			<div class="galaxy">
 				<img src="img/galaxy.png" alt="">
