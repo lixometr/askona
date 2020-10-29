@@ -57,13 +57,24 @@ class Menu {
         // this.wrapperAll.wrap(this.tempWrapper)
         // this.wrapperAll.css('height', this.wrapperAll.height() + 'px')
         // $('.temp-wrapper-all').scrollTop(top)
-        $('body').addClass("nav-open")
+        // $('body').addClass("nav-open")
+        gsap.fromTo('.header__menu', {
+            x: '100%',
+            opacity: 0
+
+        }, {
+            x: '0',
+            opacity: 1,
+            duration: .5,
+            display: 'block',
+            ease: 'ease-in-out'
+        })
 
 
     }
     close() {
         // this.burger.removeActive()
-        $('body').removeClass("nav-open")
+        // $('body').removeClass("nav-open")
         // $('.temp-wrapper-all').on('transitionend', () => {
         //     const top = $('.temp-wrapper-all').scrollTop()
         //     this.wrapperAll.insertAfter($('.temp-wrapper-all'))
@@ -71,6 +82,17 @@ class Menu {
         //     $('.temp-wrapper-all').remove()
         //     $(window).scrollTop(top)
         // })
+        gsap.fromTo('.header__menu', {
+            x: '0',
+            opacity: 1
+
+        }, {
+            x: '100%',
+            opacity: 0,
+            duration: .5,
+            display: 'none',
+            
+        })
 
     }
     addListeners() {

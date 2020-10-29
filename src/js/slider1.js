@@ -16,7 +16,8 @@ class Slider {
         this.init()
     }
     setSlide(idx) {
-        if(this.isAnimating) return
+        if (this.isAnimating) return
+        if(idx === this.nowSlide) return
         this.prevSlide = this.nowSlide
         this.nowSlide = idx
         this.animate()
@@ -39,13 +40,13 @@ class Slider {
         }
     }
     slideNext() {
-        if(this.isAnimating) return
+        if (this.isAnimating) return
 
         this.next()
         this.animate()
     }
     slidePrev() {
-        if(this.isAnimating) return
+        if (this.isAnimating) return
         this.prev()
         this.animate()
     }
@@ -113,14 +114,19 @@ class Slider {
 
     }
     animateTabs() {
-
         this.tabs.removeClass('s2-organ_active')
         const activeTab = this.tabs.eq(this.nowSlide)
-        const prevTab =  this.tabs.eq(this.prevSlide)
+        const prevTab = this.tabs.eq(this.prevSlide)
         activeTab.addClass('s2-organ_active')
-        const prevLeft = prevTab.position().left
-        console.log(prevLeft)
-        activeTab.css('left', 0)
+        const activeIndexPrev = parseInt(activeTab.attr('data-index'))
+        activeTab.attr('data-index', 1)
+        for (let i = activeIndexPrev + 1; i <= 4; i++) {
+            const el = this.tabs.parent().find(`.s2-organ[data-index='${i}']`)
+            el.attr('data-index', i - 1)
+
+        }
+        prevTab.attr('data-index', 4)
+
     }
     addListeners() {
         const self = this

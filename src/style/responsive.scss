@@ -855,11 +855,7 @@
 	}
 
 	.s7__clouds {
-		display: none;
-	}
-
-	.s7__clouds-mob {
-		display: block;
+		// display: none;
 	}
 
 
@@ -895,6 +891,9 @@
 		width: 100%;
 		height: 40px;
 		font-size: 12px;
+	}
+	.s8-map__select-wrapper {
+		width: 100%;
 	}
 
 	.s8-map__links {

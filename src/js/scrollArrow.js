@@ -14,6 +14,11 @@ $('.bottom-btn').on('click', () => {
         $('html, body').animate({
             scrollTop: 0,
         }, 300)
+    } else {
+        const sTop = $('.s2').offset().top
+        $('html, body').animate({
+            scrollTop: sTop,
+        }, 300)
     }
 })
 $(window).on('scroll', throttle(check, 300))

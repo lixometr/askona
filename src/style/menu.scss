@@ -30,6 +30,10 @@ $cubic-bezier: cubic-bezier(0.30, 1.40, 0.70, 1);
     bottom: 0;
     margin: auto;
 
+    @media screen and (max-width: 576px) {
+        width: 18px;
+    }
+
     span {
         position: relative;
         display: block;
@@ -37,10 +41,13 @@ $cubic-bezier: cubic-bezier(0.30, 1.40, 0.70, 1);
         height: 1px;
         background-color: $menu_color;
 
+        @media screen and (max-width: 576px) {
+            width: 18px;
+        }
 
         transition: transform .2s ease,
-            top .2s $cubic-bezier .2s,
-            bottom .2s $cubic-bezier .2s;
+        top .2s $cubic-bezier .2s,
+        bottom .2s $cubic-bezier .2s;
 
         &:first-of-type {
             top: -4px;
@@ -89,6 +96,12 @@ $cubic-bezier: cubic-bezier(0.30, 1.40, 0.70, 1);
     width: 25px;
     opacity: 0;
     @include center(50px);
+
+    @media screen and (max-width: 576px) {
+        width: 34px;
+        height: 34px;
+
+    }
 
     &.run {
         animation: pulse .8s ease 1;
@@ -173,7 +186,7 @@ body {
     overflow: auto;
     transform: scale(1);
 
-    transition:  .3s;
+    transition: .3s;
 }
 
 .nav-open .temp-wrapper-all {

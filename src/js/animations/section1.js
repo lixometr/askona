@@ -80,18 +80,6 @@ gsap.fromTo('#stars', {
 })
 
 
-gsap.to('#stars', {
-    scrollTrigger: {
-        trigger: ".s5",
-        pin: false,
-        start: "top top",
-        end: "+=400",
-        scrub: false, // fix can be in seconds (smooth delay)
-        // once: true
-
-    },
-    opacity: 0
-})
 
 
 function checkGalaxy() {

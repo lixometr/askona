@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger.min.js"
+import Preloader from "./preloader"
 import $ from "jquery"
 global.$ = $
 gsap.registerPlugin(ScrollTrigger)
@@ -11,10 +12,12 @@ global.gsap = gsap
 import Stars from './stars'
 
 global.Stars = Stars
-
-// require('slick-carousel')
+const preloader = new Preloader
+preloader.show()
+$(window).on('load', () => {
+    preloader.hide()
+})
 require('./my')
-
 require('./animations/section1')
 require('./animations/section2')
 require('./animations/section3')
@@ -25,17 +28,18 @@ require('./cursorFollow')
 require('./slider1')
 require('./slider2')
 require('./parallax')
-// require('./fullpage')
 require('./menu')
+require('./scrollTo')
+require('./sticks')
 require('./scrollArrow')
 let prevScroll = $(window).scrollTop()
 $(window).on('scroll', e => {
     const nowScrollTop = $(window).scrollTop()
     if (nowScrollTop > prevScroll) {
-        Stars.updateStarsY(-3)
+        Stars.updateStarsY(-5)
 
     } else {
-        Stars.updateStarsY(3)
+        Stars.updateStarsY(5)
 
     }
     prevScroll = nowScrollTop

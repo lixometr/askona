@@ -11,7 +11,7 @@ gsap.to(image1, {
         // once: true
 
     },
-    y: '-=160'
+    y: '-=160px'
 })
 gsap.to(image2, {
     scrollTrigger: {
@@ -23,5 +23,5 @@ gsap.to(image2, {
         // once: true
 
     },
-    y: '-=100'
+    y: '-=100px'
 })

@@ -284,7 +284,11 @@ body {
 	left: 0;
 	top: 0;
 	width: 100%;
-	z-index: 100;
+	z-index: 300;
+	> .container {
+		z-index: 400;
+		position: relative;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -318,56 +322,13 @@ body {
 	height: 60px;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.05);
-	z-index: 1;
+	z-index: 400;
 
-	// &:before,
-	// &:after {
-	// 	content: "";
-	// 	position: absolute;
-	// 	left: 50%;
-	// 	top: 50%;
-	// 	transform: translate(-50%, -50%);
-	// 	width: 30px;
-	// 	height: 1px;
-	// 	border-radius: 1px;
-	// 	background: rgba(255, 255, 255, 0.8);
-	// 	transition: all 0.3s;
-	// }
 
-	// &:before {
-	// 	margin: 5px 0 0 0;
-	// }
 
-	// &:after {
-	// 	margin: -5px 0 0 0;
-	// }
-
-	// &:hover {
-	// 	box-shadow: none;
-
-	// 	&:before,
-	// 	&:after {
-	// 		background: #FFFFFF;
-	// 		box-shadow: 0px 0px 4px #FFFFFF;
-	// 	}
-	// }
 }
 
-.header__menu-btn_active {
 
-	// &:before,
-	// &:after {
-	// 	margin: 0 !important;
-	// }
-
-	// &:before {
-	// 	transform: translate(-50%, -50%) rotate(45deg);
-	// }
-
-	// &:after {
-	// 	transform: translate(-50%, -50%) rotate(-45deg);
-	// }
-}
 
 .switcher {
 	position: fixed;
@@ -385,7 +346,6 @@ body {
 	border-radius: 1px;
 	background: rgba(255, 255, 255, 0.3);
 	transition: all 0.2s;
-	cursor: pointer;
 
 	&:last-child {
 		margin: 0;
@@ -460,7 +420,7 @@ body {
 	height: 100%;
 	text-align: right;
 	background: rgba(0, 0, 0, 0.4);
-
+	z-index: 200;
 	.socials {
 		display: none;
 		flex-wrap: wrap;
@@ -523,7 +483,7 @@ body {
 
 		&:before {
 			background: #FFFFFF;
-			box-shadow: 0px 0px 14px #FFFFFF;
+			box-shadow: 0px 0px 4px #FFFFFF;
 		}
 	}
 
@@ -572,6 +532,9 @@ body {
 	svg {
 		width: 18px;
 		transition: .1s;
+		@media screen and (max-width: 576px) {
+			width: 13px;
+		}
 	}
 
 	&:hover {
@@ -714,6 +677,7 @@ body {
 	flex-wrap: wrap;
 	margin: 0 auto;
 	max-width: 478px;
+	position: relative;
 }
 
 .s2-organ {
@@ -721,7 +685,7 @@ body {
 	text-align: center;
 	// cursor: pointer;
 	user-select: none;
-	position: relative;
+	position: absolute;
 	transition: .3s;
 
 	&:hover {
@@ -733,6 +697,18 @@ body {
 			opacity: 1;
 		}
 	}
+}
+.s2-organ[data-index="1"] {
+	left: 0;
+}
+.s2-organ[data-index="2"] {
+	left: 25%;
+}
+.s2-organ[data-index="3"] {
+	left: 50%;
+}
+.s2-organ[data-index="4"] {
+	left: 75%;
 }
 
 .s2-organ_active {
@@ -777,6 +753,7 @@ body {
 .s2__slider {
 	position: relative;
 	flex: 1;
+	// height: 470px;
 
 }
 
@@ -879,7 +856,7 @@ body {
 
 .s2__item {
 	display: none;
-
+	 height: 410px;
 	&.active {
 		display: block;
 	}
@@ -1213,7 +1190,7 @@ body {
 	.s5-timer__value-bg {
 		&>* {
 			width: 117%;
-			margin: 0 0 0 -6px;
+			// margin: 0 0 0 -6px;
 		}
 	}
 
@@ -2011,8 +1988,8 @@ body {
 	position: relative;
 	display: block;
 	padding: 0 40px 0 15px;
-	width: 44.16%;
 	height: 48px;
+	width: 100%;
 	border-radius: 6px;
 	border: 1px solid rgba(255, 255, 255, 0.4);
 	outline: 0;
@@ -2027,7 +2004,10 @@ body {
 		color: #000;
 	}
 }
+.s8-map__select-wrapper {
+	width: 44.16%;
 
+}
 .s8-map__links {
 	display: flex;
 	flex-wrap: wrap;
