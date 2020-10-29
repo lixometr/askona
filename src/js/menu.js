@@ -52,11 +52,11 @@ class Menu {
 
     open() {
         // this.burger.makeActive()
-        const top = $(window).scrollTop()
-        this.tempWrapper = $('<div class="temp-wrapper-all"></div>')
-        this.wrapperAll.wrap(this.tempWrapper)
-        this.wrapperAll.css('height', this.wrapperAll.height() + 'px')
-        $('.temp-wrapper-all').scrollTop(top)
+        // const top = $(window).scrollTop()
+        // this.tempWrapper = $('<div class="temp-wrapper-all"></div>')
+        // this.wrapperAll.wrap(this.tempWrapper)
+        // this.wrapperAll.css('height', this.wrapperAll.height() + 'px')
+        // $('.temp-wrapper-all').scrollTop(top)
         $('body').addClass("nav-open")
 
 
@@ -64,13 +64,13 @@ class Menu {
     close() {
         // this.burger.removeActive()
         $('body').removeClass("nav-open")
-        $('.temp-wrapper-all').on('transitionend', () => {
-            const top = $('.temp-wrapper-all').scrollTop()
-            this.wrapperAll.insertAfter($('.temp-wrapper-all'))
-            this.wrapperAll.css('height', '')
-            $('.temp-wrapper-all').remove()
-            $(window).scrollTop(top)
-        })
+        // $('.temp-wrapper-all').on('transitionend', () => {
+        //     const top = $('.temp-wrapper-all').scrollTop()
+        //     this.wrapperAll.insertAfter($('.temp-wrapper-all'))
+        //     this.wrapperAll.css('height', '')
+        //     $('.temp-wrapper-all').remove()
+        //     $(window).scrollTop(top)
+        // })
 
     }
     addListeners() {
