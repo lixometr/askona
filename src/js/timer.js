@@ -1,5 +1,5 @@
 import SvgModel from "./svgModel"
-const date = new Date(2020, 9, 30, 11)
+const date = new Date(2020, 11, 30, 12)
 
 
 class Timer {

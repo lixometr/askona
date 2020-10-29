@@ -48,6 +48,7 @@ class Menu {
         })
         this.wrapperAll = $('.wrapper-all')
         // this.el = ''
+        this.init()
     }
 
     open() {
@@ -91,12 +92,22 @@ class Menu {
             opacity: 0,
             duration: .5,
             display: 'none',
-            
+
         })
 
     }
     addListeners() {
-
+        const self = this
+        $(document).on('click', '.scroll-link', function (e) {
+            e.preventDefault()
+            const id = $(this).attr('href')
+            const top = $(id).offset().top
+            let offset = $(this).attr('data-offset') || 0
+            self.burger.removeActive()
+            $('html, body').animate({
+                scrollTop: top + parseInt(offset)
+            }, 500)
+        })
     }
     init() {
         this.addListeners()

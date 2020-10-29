@@ -3,7 +3,7 @@ class CursorFollow {
         this.el = document.querySelector('#cursor-follow')
         this.width = this.el.offsetWidth
         this.height = this.el.offsetHeight
-        this.targetElements = ['button', 'a', '.hover', 'input']
+        this.targetElements = ['button', 'a', '.hover', 'input', 'select']
         this.init()
     }
     makeActive() {

@@ -13,25 +13,27 @@ import Stars from './stars'
 
 global.Stars = Stars
 const preloader = new Preloader
-preloader.show()
+// preloader.show()
 $(window).on('load', () => {
     preloader.hide()
+    
+    require('./animations/section1')
+    require('./animations/section2')
+    require('./animations/section3')
+    require('./animations/section4')
+    require('./animations/section5')
+    require('./animations/section6')
+    require('./animations/section8')
+    require('./cursorFollow')
+    require('./slider1')
+    require('./slider2')
+    require('./parallax')
+    require('./menu')
+    require('./scrollTo')
+    require('./sticks')
+    require('./scrollArrow')
 })
-require('./my')
-require('./animations/section1')
-require('./animations/section2')
-require('./animations/section3')
-require('./animations/section4')
-require('./animations/section5')
-require('./animations/section6')
-require('./cursorFollow')
-require('./slider1')
-require('./slider2')
-require('./parallax')
-require('./menu')
-require('./scrollTo')
-require('./sticks')
-require('./scrollArrow')
+
 let prevScroll = $(window).scrollTop()
 $(window).on('scroll', e => {
     const nowScrollTop = $(window).scrollTop()

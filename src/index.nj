@@ -668,13 +668,16 @@
 					<div>
 						<div class="s8-map">
 							<div class="s8-map__top">
-								<div class="s8-map__select-wrapper">
-									<select class="s8-map__select">
+								<div class="s8-map__select-wrapper hover">
+									<select class="s8-map__select" id="s8-select">
 										<option value="">Москва</option>
 										<option value="">Санкт-Петербург</option>
 										<option value="">Казань</option>
 										<option value="">Воронеж</option>
 									</select>
+									<label class="s8-map__select-arrow" for="s8-select">
+										{% include "img/arrow_bottom.svg" %}
+									</label>
 								</div>
 								<ul class="s8-map__links">
 									<li>
