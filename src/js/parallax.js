@@ -1,3 +1,4 @@
+import throttle from "lodash.throttle"
 function Parallax(options) {
     options = options || {};
     this.nameSpaces = {
@@ -5,35 +6,38 @@ function Parallax(options) {
         layers: options.layers || '.parallax-layer',
         deep: options.deep || 'data-parallax-deep'
     };
-    this.init = function () {
-        var self = this,
+    this.onMouseMove = (e, i) => {
+        const self = this,
             parallaxWrappers = document.querySelectorAll(this.nameSpaces.wrapper);
+        const layers = parallaxWrappers[i].querySelectorAll(self.nameSpaces.layers);
+        for (var j = 0; j < layers.length; j++) {
+            (function (j) {
+                const $this = $(layers[j]);
+                const relX = e.pageX - $this.offset().left;
+                const relY = e.pageY - $this.offset().top;
+                const deep = layers[j].getAttribute(self.nameSpaces.deep),
+                    disallow = layers[j].getAttribute('data-parallax-disallow'),
+                    x = (disallow && disallow === 'x') ? 0 : (relX - $this.width() / 2) / $this.width() * deep,
+                    y = (disallow && disallow === 'y') ? 0 : (relY - $this.height() / 2) / $this.height() * deep;
+                if (disallow && disallow === 'both') return;
+                // layers[j].style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px)';
+
+                gsap.to(layers[j], {
+                    x: x,
+                    y: y,
+                    duration: 1,
+                })
+            })(j);
+        }
+    }
+    this.onMouseMove = throttle(this.onMouseMove.bind(this), 200)
+    this.init = function () {
+        const self = this
+        const parallaxWrappers = document.querySelectorAll(this.nameSpaces.wrapper);
         for (var i = 0; i < parallaxWrappers.length; i++) {
             (function (i) {
-                parallaxWrappers[i].addEventListener('mousemove', function (e) {
-                    // var x = e.clientX,
-                    //     y = e.clientY,
-                    const layers = parallaxWrappers[i].querySelectorAll(self.nameSpaces.layers);
-                    for (var j = 0; j < layers.length; j++) {
-                        (function (j) {
-                            var deep = layers[j].getAttribute(self.nameSpaces.deep),
-                                disallow = layers[j].getAttribute('data-parallax-disallow'),
-                                itemX = (disallow && disallow === 'x') ? 0 : x / deep,
-                                itemY = (disallow && disallow === 'y') ? 0 : y / deep;
-                            if (disallow && disallow === 'both') return;
-                            // layers[j].style.transform = 'translateX(' + itemX + '%) translateY(' + itemY + '%)';
-                            var $this = $(layers[j]);
-                            var relX = e.pageX - $this.offset().left;
-                            var relY = e.pageY - $this.offset().top;
-                            const x = (relX - $this.width() / 2) / $this.width() * deep;
-                            const y = (relY - $this.height() / 2) / $this.height() * deep;
-                            gsap.to(layers[j], {
-                                x: x,
-                                y: y,
-                                duration: 1
-                            })
-                        })(j);
-                    }
+                parallaxWrappers[i].addEventListener('mousemove', (e) => {
+                    self.onMouseMove(e, i)
                 })
             })(i);
         }
