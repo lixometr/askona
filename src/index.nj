@@ -119,7 +119,7 @@
 						<div class="s1__row">
 							<div class="s1__box">
 								<h1 class="s1__title">
-									<b>РОЗЫГРЫШ</b> СПАЛЬНОЙ СИСТЕМЫ ОТ ASKONA
+									РОЗЫГРЫШ <br> СПАЛЬНОЙ СИСТЕМЫ <br> ОТ ASKONA
 						</h1>
 								<p class="s1__subtitle">Невероятный мир Ergomotion - это погружение в здоровый и глубокий сон за
 							15
@@ -682,8 +682,6 @@
 											<select class="s8-map__select" id="s8-select">
 												<option value="">Москва</option>
 												<option value="">Санкт-Петербург</option>
-												<option value="">Казань</option>
-												<option value="">Воронеж</option>
 											</select>
 											<label class="s8-map__select-arrow" for="s8-select">
 												{% include "img/arrow_bottom.svg" %}

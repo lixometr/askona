@@ -10,7 +10,7 @@ gsap.to('.galaxy', {
         pin: false,
         start: "top top-=200px",
         duration: 1,
-        toggleActions: "play none reverse none",
+        toggleActions: "play reverse reverse reverse",
 
 
         // end: "+=400",
@@ -26,6 +26,7 @@ gsap.to('.s1__box', {
         pin: false,
         start: "top top-=200px",
         duration: .9,
+        toggleActions: "play none none reverse",
 
         // end: "+=400",
         scrub: false, // fix can be in seconds (smooth delay)
@@ -39,6 +40,8 @@ gsap.to('.s1__image', {
         trigger: ".s1",
         pin: false,
         start: "top top=-200px",
+        toggleActions: "play none none reverse",
+
         // end: "+=200",
         duration: .9,
         scrub: false, // fix can be in seconds (smooth delay)
@@ -75,7 +78,8 @@ gsap.fromTo(' .s1__subtitle, .s1__btn', {
     y: 0,
     opacity: 1,
     autoAlpha: 1,
-    duration: .9
+    duration: .9,
+    delay: .5
 })
 gsap.fromTo('.header__box', {
     opacity: 0,
@@ -84,7 +88,9 @@ gsap.fromTo('.header__box', {
     y: 0,
     opacity: 1,
     autoAlpha: 1,
-    duration: .9
+    duration: .9,
+    delay: .5
+    
 })
 gsap.fromTo('.galaxy', {
     opacity: 0,
@@ -93,7 +99,9 @@ gsap.fromTo('.galaxy', {
     y: 0,
     opacity: 1,
     autoAlpha: 1,
-    duration: .9
+    duration: .9,
+    delay: .3
+
 })
 gsap.fromTo('.s1__image', {
     opacity: 0,
@@ -102,7 +110,9 @@ gsap.fromTo('.s1__image', {
     x: 0,
     opacity: 1,
     autoAlpha: 1,
-    duration: .9
+    duration: .9,
+    delay: .8
+
 })
 gsap.fromTo('#stars', {
     scale: 1.4,

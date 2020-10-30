@@ -170,7 +170,7 @@ const buildImages = mode => done => {
   ["development", "production"].includes(mode)
     ? pump(
         [
-          gulp.src(srcPath("img")),
+          // gulp.src(srcPath("img")),
           // gulpImagemin([
           //   gulpImagemin.gifsicle(),
           //   gulpImagemin.jpegtran(),
@@ -179,7 +179,7 @@ const buildImages = mode => done => {
           //   imageminPngquant(),
           //   imageminJpegRecompress()
           // ]),
-          gulp.dest(distPath("img")),
+          // gulp.dest(distPath("img")),
           browserSync.stream()
         ],
         done
@@ -314,12 +314,12 @@ const genericTask = (mode, context = "building") => {
     Object.assign(buildMarkup(mode), {
       displayName: `Booting Markup Task: Build - ${modeName}`
     }),
-    Object.assign(cleanImages(mode), {
-      displayName: `Booting Images Task: Clean - ${modeName}`
-    }),
-    Object.assign(buildImages(mode), {
-      displayName: `Booting Images Task: Build - ${modeName}`
-    }),
+    // Object.assign(cleanImages(mode), {
+    //   displayName: `Booting Images Task: Clean - ${modeName}`
+    // }),
+    // Object.assign(buildImages(mode), {
+    //   displayName: `Booting Images Task: Build - ${modeName}`
+    // }),
     Object.assign(cleanStyles(mode), {
       displayName: `Booting Styles Task: Clean - ${modeName}`
     }),

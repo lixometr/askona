@@ -582,13 +582,14 @@ body {
 	margin: 0 0 0.79em;
 	font: bold 43px/1.2 $f1;
 	white-space: nowrap;
-	text-align: center;
-	text-transform: uppercase;
-
+	text-align: left;
+	// text-transform: uppercase;
+	font: 800 3.1em/1.2 $f1;
+	color: #F2F2F2;
 	b {
-		display: block;
-		font: 800 2.98em/0.8 $f1;
-		color: rgba(255, 255, 255, 0.17);
+		// display: block;
+		// font: 800 2.98em/0.8 $f1;
+		// color: rgba(255, 255, 255, 0.17);
 	}
 }
 
