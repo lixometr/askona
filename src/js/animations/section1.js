@@ -11,7 +11,7 @@ function scrollParallax() {
             pin: false,
             start: "top top-=200px",
             duration: 1,
-            toggleActions: "play reverse reverse reverse",
+            toggleActions: "play none none reverse",
     
     
             // end: "+=400",
@@ -19,7 +19,7 @@ function scrollParallax() {
             // once: true
     
         },
-        y: -300
+        y: -250
     })
     gsap.to('.s1__box', {
         scrollTrigger: {
@@ -53,7 +53,7 @@ function scrollParallax() {
     })
 }
 
-if($(window).width() > 600) {
+if($(window).width() > 991) {
     scrollParallax()
 }
 

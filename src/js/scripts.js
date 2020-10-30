@@ -27,6 +27,8 @@ $(window).on('load', () => {
     require('./animations/section6')
     require('./animations/section8')
     require('./cursorFollow')
+require('jquery-touchswipe')
+
     require('./slider1')
     require('./slider2')
     require('./parallax')

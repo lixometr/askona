@@ -226,7 +226,13 @@
 		transform: none;
 		width: 100%;
 	}
-
+	.galaxy {
+		margin-top: -10%;
+	}
+	.bottom-btn {
+		right: 10px;
+		transform: none;
+	}
 	.s1__row {
 		flex-direction: column;
 		align-items: center;
@@ -236,7 +242,9 @@
 	.s1__title {
 		font-size: 30px;
 	}
-
+	.s2{
+		padding-top: 100px;
+	}
 	.s2__title {
 		text-align: center;
 	}
@@ -353,6 +361,7 @@
 	.s1__title {
 		text-align: center;
 	}
+	
 	.container {
 		padding: 0 33px;
 	}
@@ -492,6 +501,7 @@
 
 	.s2 {
 		height: auto;
+			padding-top: 0;
 	}
 
 	.s2__box > *:nth-child(1) {

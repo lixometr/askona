@@ -1,5 +1,4 @@
 
-
 class Slider {
     constructor() {
         this.nowSlide = 0
@@ -17,7 +16,7 @@ class Slider {
     }
     setSlide(idx) {
         if (this.isAnimating) return
-        if(idx === this.nowSlide) return
+        if (idx === this.nowSlide) return
         this.prevSlide = this.nowSlide
         this.nowSlide = idx
         this.animate()
@@ -134,6 +133,18 @@ class Slider {
             const idx = $(this).index()
             self.setSlide(idx)
         })
+        const swiperOpts = {
+            swipe: (event, direction, distance, duration,) => {
+                if (direction === 'left') {
+                    this.slideNext()
+                } else if (direction === 'right') {
+                    this.slidePrev()
+                }
+            },
+            allowPageScroll: 'auto'
+        }
+        this.items.swipe(swiperOpts)
+        this.images.swipe(swiperOpts)
         this.arrowNext.on('click', () => {
             this.slideNext()
         })

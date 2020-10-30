@@ -147,7 +147,7 @@ body {
         position: relative;
         width: 100px;
         height: 100px;
-        @include distribute-on-circle(8, 80px, 10px);
+        @include distribute-on-circle(8, 65px, 8px);
 
         span {
 

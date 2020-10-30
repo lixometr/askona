@@ -94,6 +94,18 @@ class Slider {
         this.arrowPrev.on('click', () => {
             this.slidePrev()
         })
+        const swiperOpts ={
+            swipe: (event, direction, distance, duration,) => {
+                if(direction === 'left') {
+                    this.slideNext()
+                } else if(direction === 'right'){
+                    this.slidePrev()
+                }
+            },
+            allowPageScroll: 'auto'
+        }
+        this.items.swipe(swiperOpts)
+        this.images.swipe(swiperOpts)
     }
     init() {
         this.addListeners()
