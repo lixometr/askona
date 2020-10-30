@@ -108,9 +108,11 @@
 				</ul>
 			</div>
 		</header>
-		<div class="data-scroll-box">
-			<div class="wrapper-all " data-scroll>
 		<canvas id="stars"></canvas>
+
+		<div class="data-scroll-box">
+		
+			<div class="wrapper-all " data-scroll>
 
 				<div class="sblock s1">
 					<div class="container">

@@ -33,6 +33,8 @@ $(window).on('load', () => {
     require('./scrollTo')
     require('./sticks')
     require('./scrollArrow')
+// require('./smooth-scroll.js')
+
     require('./smoothScroll')
 })
 

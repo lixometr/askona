@@ -1,5 +1,5 @@
-require('./smooth-scroll.min.js')
-if (!isMac) {
+import SmoothScroll from './smooth-scroll'
+// if (!isMac) {
     new SmoothScroll();
 
-}
+// }
