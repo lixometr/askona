@@ -390,7 +390,7 @@ body {
 
 .socials {
 	position: fixed;
-	left: 4.7%;
+	left: 30px;
 	bottom: 8%;
 	z-index: 1;
 
@@ -519,7 +519,7 @@ body {
 
 .bottom-btn {
 	position: fixed;
-	bottom: 4%;
+	bottom: 8%;
 	width: 60px;
 	height: 60px;
 	border: 1px solid transparent;
@@ -705,7 +705,7 @@ body {
 	// cursor: pointer;
 	user-select: none;
 	position: absolute;
-	transition: 0.3s;
+	transition: .6s;
 
 	&:hover {
 		.s2-organ__text {

@@ -3,23 +3,10 @@
 
 	<head>
 		{% include "template/head.html" %}
-		<title>Розыгрыш спальной системы от Askona</title>
-
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-N7TS4J4');</script>
-		<!-- End Google Tag Manager -->
+		<title>Askona</title>
 	</head>
 
 	<body>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7TS4J4"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
-		
 		<div class="preloader">
 			<div class="element">
 				<span>
@@ -70,16 +57,16 @@
 
 			<ul class="socials">
 				<li>
-					<a href="https://vk.com/askonaru" target="_blank"><img src="img/social/vk.svg" alt=""></a>
+					<a href="#" target="_blank"><img src="img/social/vk.svg" alt=""></a>
 				</li>
 				<li>
-					<a href="https://ok.ru/group/51771901804675" target="_blank"><img src="img/social/ok.svg" alt=""></a>
+					<a href="#" target="_blank"><img src="img/social/ok.svg" alt=""></a>
 				</li>
 				<li>
-					<a href="https://www.facebook.com/AskonaRu" target="_blank"><img src="img/social/fb.svg" alt=""></a>
+					<a href="#" target="_blank"><img src="img/social/fb.svg" alt=""></a>
 				</li>
 				<li>
-					<a href="https://www.instagram.com/askona_official/" target="_blank"><img src="img/social/inst.svg" alt=""></a>
+					<a href="#" target="_blank"><img src="img/social/inst.svg" alt=""></a>
 				</li>
 			</ul>
 			<div class="header__menu">
@@ -107,16 +94,16 @@
 				</ul>
 				<ul class="socials">
 					<li>
-						<a href="https://vk.com/askonaru" target="_blank"><img src="img/social/vk.svg" alt=""></a>
+						<a href="#" target="_blank"><img src="img/social/vk.svg" alt=""></a>
 					</li>
 					<li>
-						<a href="https://ok.ru/group/51771901804675" target="_blank"><img src="img/social/ok.svg" alt=""></a>
+						<a href="#" target="_blank"><img src="img/social/ok.svg" alt=""></a>
 					</li>
 					<li>
-						<a href="https://www.facebook.com/AskonaRu" target="_blank"><img src="img/social/fb.svg" alt=""></a>
+						<a href="#" target="_blank"><img src="img/social/fb.svg" alt=""></a>
 					</li>
 					<li>
-						<a href="https://www.instagram.com/askona_official/" target="_blank"><img src="img/social/inst.svg" alt=""></a>
+						<a href="#" target="_blank"><img src="img/social/inst.svg" alt=""></a>
 					</li>
 				</ul>
 			</div>
@@ -133,11 +120,11 @@
 							<div class="s1__box">
 								<h1 class="s1__title">
 									РОЗЫГРЫШ <br> СПАЛЬНОЙ СИСТЕМЫ <br> ОТ ASKONA
-								</h1>
-								<p class="s1__subtitle">
-									Невероятный мир Ergomotion - это погружение в здоровый и глубокий сон за 15 минут 
-								</p>
-								<a href="#askona" class="sbtn s1__btn">Принять участие</a>
+						</h1>
+								<p class="s1__subtitle">Невероятный мир Ergomotion - это погружение в здоровый и глубокий сон за
+							15
+							минут </p>
+								<a href="#" class="sbtn s1__btn">Принять участие</a>
 							</div>
 							<div class="s1__image">
 								<img src="img/header_image.png" alt="">
@@ -204,82 +191,97 @@
 									<div class="sslider s2__items">
 										<div class="s2__item active">
 											<div class="stext s2__text">
-												<p>Позвоночник обеспечивает способность двигаться, а значит, добиваться целей. 
-												Гибкость, стабильность, распределение нагрузки – эти качества нужны не только вам, но и позвоночнику.</p>
-												
-												<p>Во время сна важно поддерживать позвоночник в его естественном  состоянии, 
-												а мышечный корсет должен быть равномерно расслаблен. Это позволит проснуться без болей в спине и шее.</p>
-												
-												<p>Огромную часть жизни мы проводим во сне. Поэтому положение позвоночника во сне 
-												играет очень важную роль для всего организмы.</p>
-
-												<p>На позвоночник влияют все особенности сна – положение головы, тела, жесткость матраса, размер и мягкость подушки, 
-												постельное белье, одежда  - в зависимости от удобства, даже она может сделать ваш сон более комфортным.</p>
+												<p>Позвоночник обеспечивает способность двигаться, а значит, добиваться целей.
+											Гибкость, стабильность, распределение нагрузки – эти качества нужны не
+											только
+											вам, но и позвоночнику.</p>
+												<p>Во время сна важно поддерживать позвоночник в естественном выпрямленном
+											состоянии, а мышечный корсет должен быть равномерно расслаблен. Это позволит
+											проснуться без болей в спине и шее. </p>
+												<p>На позвоночник влияет вся экосистема сна – положение основания, жесткость
+											матраса, размер и мягкость подушки, постельное белье, одежда и даже ваша
+											поза.
+										</p>
 											</div>
 											<div class="s2-author">
 												<div class="s2-author__img">
 													<img src="img/2/doctor.png" alt="">
 												</div>
-												<div class="s2-author__text-1">Игнатова Ирина Александровна</div>
-												<div class="s2-author__text-2">врач-невролог</div>
+												<div class="s2-author__text-1">Иван Иванович Иванов</div>
+												<div class="s2-author__text-2">врач-вертебролог, дмн</div>
 											</div>
 										</div>
 										<div class="s2__item">
 											<div class="stext s2__text">
-												<p>Пока вы спите, мозг переходит в особое состояние, чтобы восстановить свои ресурсы. 
-												Только это позволяет нам на утро снова активно жить: работать, учиться и принимать верные решения.</p>
+												<p>Пока вы спите, мозг переходит в особый режим, чтобы восстановить способности
+											активно жить, работать и принимать верные решения.</p>
 
-												<p>Сон активизирует нейронные процессы в теменной зоне, что влияет на скорость реакций. 
-												Префронтальная кора мозга улучшает работу, отвечая за формулировку сложных мыслей. 
-												Во сне снижаются риски развития деменции, неврозов и психических расстройств.</p>
-
-												<p>Особенно важна фаза быстрого сна – она отвечает за «перезагрузку» мозга и нервной системы. 
-												Пробуждение из-за любого дискомфорта нарушает фазу и делает сон неполноценным.  
-												Очень важно сделать сон качественным, тогда и работа мозга днем будет легкой и плодотворной. </p>
+												<p>Сон активизирует нейронные процессы в теменной зоне, что влияет на скорость
+											реакций. Префронтальная кора мозга улучшает работу, отвечая
+											за формулировку сложных мыслей. Во сне снижаются риски развития деменции,
+											неврозов и психических расстройств. </p>
+												<p>
+											Особенно важна фаза быстрого сна – она отвечает за «перезагрузку» мозга
+											и нервной системы. Пробуждение из-за любого дискомфорта нарушает фазу и
+											делает
+											сон неполноценным.</p>
 											</div>
 											<div class="s2-author">
 												<div class="s2-author__img">
 													<img src="img/2/doctor.png" alt="">
 												</div>
-												<div class="s2-author__text-1">Игнатова Ирина Александровна</div>
-												<div class="s2-author__text-2">врач-невролог</div>
+												<div class="s2-author__text-1">Иван Иванович Иванов</div>
+												<div class="s2-author__text-2">врач-вертебролог, дмн</div>
 											</div>
 										</div>
 										<div class="s2__item">
 											<div class="stext s2__text">
-												<p>Синтез важного гормона мелатонина эффективно происходит с наступлением темноты и снижается в светлое время суток. 
-												Он участвует в регуляции деятельности центральной и вегетативной нервной системы, эндокринных органов и иммунной системы.</p>
+												<p>С полуночи и до 4-х утра синтез ключевого «сонного» гормона мелатонина
+											возрастает
+											в десятки раз, он держит в балансе иммунитет и артериальное давление.</p>
 
-												<p>Максимум гормона роста, соматотропина, вырабатывается через 2 часа после засыпания: он контролирует углеводный, липидный и минеральный обмены. 
-												Иронично, но мужские и женские репродуктивные гормоны активизируются именно ночью.</p>
+												<p>Максимум гормона роста (соматотропина) организм производит через 2 часа после
+											засыпания, клетки обновляются, а раны заживают.</p>
 
-												<p>В погоне за мечтами вам и помогает, и мешает кортизол – гормон стресса, активности и энергии.  
-												Если его мало, вы не можете работать, если много – напряжены до предела. Все просто.  Кортизол расходуется днем, а восполняется ночью.</p>
+												<p>Иронично, но мужские и женские репродуктивные гормоны активизируются именно
+											ночью.</p>
+
+												<p>В погоне за мечтами вам и помогает, и мешает кортизол – гормон стресса. Если
+											его
+											мало, вы не можете работать, если много – напряжены до предела. Все просто.
+											Кортизол расходуется днем, а восполняется ночью.</p>
 											</div>
 											<div class="s2-author">
 												<div class="s2-author__img">
 													<img src="img/2/doctor.png" alt="">
 												</div>
-												<div class="s2-author__text-1">Яковлева Наталья Дмитриевна</div>
-												<div class="s2-author__text-2">врач-эндокринолог, кмн</div>
+												<div class="s2-author__text-1">Иван Иванович Иванов</div>
+												<div class="s2-author__text-2">врач-вертебролог, дмн</div>
 											</div>
 										</div>
 										<div class="s2__item">
 											<div class="stext s2__text">
-												<p>Быть успешным, значит, точно оценивать риски и предвосхищать опасность. 
-												Быстрое засыпание и глубокий сон значительно снижают риски хронических воспалений в сердечной ткани и сосудах.</p>
+												<p>Быть успешным, значит, точно оценивать риски и предвосхищать опасность.
+											Быстрое
+											засыпание и глубокий сон значительно снижают риски хронических воспалений в
+											сердечной ткани и сосудах.</p>
 
-												<p>Авторитетный научный журнал Cardiovascular Research со ссылкой на проект LIFEPATH, объединяющий 
-												9 рабочих групп ученых-кардиологов ведущих институтов мира, приводит результаты исследований влияния сна на снижение смертельных рисков.</p>
+												<p>Авторитетный научный журнал Cardiovascular Research со ссылкой на проект
+											LIFEPATH, объединяющий 9 рабочих групп ученых-кардиологов ведущих институтов
+											мира, приводит результаты исследований влияния сна на снижение смертельных
+											рисков.</p>
 
-												<p>Так, полноценный здоровый сон снижает риск атеросклероза на 27%, инфаркта – от 14 до 35%, инсульта – на 30% и коронарной болезни сердца – до 60%. Спите, чтобы жить!</p>
+												<p>Так, полноценный здоровый сон снижает риск атеросклероза на 27%, инфаркта –
+											от 14
+											до 35%, инсульта – на 30% и коронарной болезни сердца – до 60%. Спите, чтобы
+											жить!</p>
 											</div>
 											<div class="s2-author">
 												<div class="s2-author__img">
 													<img src="img/2/doctor.png" alt="">
 												</div>
-												<div class="s2-author__text-1">Яковлева Наталья Дмитриевна</div>
-												<div class="s2-author__text-2">врач-эндокринолог, кмн</div>
+												<div class="s2-author__text-1">Иван Иванович Иванов</div>
+												<div class="s2-author__text-2">врач-вертебролог, дмн</div>
 											</div>
 										</div>
 									</div>
@@ -346,10 +348,10 @@
 											</div>
 											<ul class="s4__btns">
 												<li>
-													<a href="#askona" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
+													<a href="#" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
 												</li>
 												<li>
-													<a href="https://www.askona.ru/brands/ergomotion/?step=1" target="_blank" class="sbtn s4__btn-2">Купить систему сна</a>
+													<a href="#" class="sbtn s4__btn-2">Купить систему сна</a>
 												</li>
 											</ul>
 										</div>
@@ -376,10 +378,10 @@
 											</div>
 											<ul class="s4__btns">
 												<li>
-													<a href="#askona" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
+													<a href="#" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
 												</li>
 												<li>
-													<a href="https://www.askona.ru/brands/ergomotion/?step=1" target="_blank" class="sbtn s4__btn-2">Купить систему сна</a>
+													<a href="#" class="sbtn s4__btn-2">Купить систему сна</a>
 												</li>
 											</ul>
 										</div>
@@ -403,10 +405,10 @@
 											</div>
 											<ul class="s4__btns">
 												<li>
-													<a href="#askona" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
+													<a href="#" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
 												</li>
 												<li>
-													<a href="https://www.askona.ru/brands/ergomotion/?step=1" target="_blank" class="sbtn s4__btn-2">Купить систему сна</a>
+													<a href="#" class="sbtn s4__btn-2">Купить систему сна</a>
 												</li>
 											</ul>
 										</div>
@@ -544,7 +546,7 @@
 
 										2
 									</span>
-											<p class="s6-step__text">Подписаться на <a href="https://www.instagram.com/askona_official/" target="_blank">аккаунт Askona</a> в Instagram
+											<p class="s6-step__text">Подписаться на <a href="#">аккаунт Askona</a> в Instagram
 									</p>
 										</div>
 									</li>
@@ -579,7 +581,7 @@
 										<label class="sform__cb">
 											<input type="checkbox" checked>
 											<span></span>
-											<span>Я принимаю <a href="./img/polit.pdf" target="_blank">условия обработки и защиты персональных
+											<span>Я принимаю <a href="#" target="_blank">условия обработки и защиты персональных
 											данных</a>
 											</span>
 										</label>
@@ -668,9 +670,9 @@
 									Выберите
 									ближайший магазин Askona на карте вашего города.</p>
 									</div>
-									<a href="https://www.askona.ru/brands/ergomotion/?step=1" target="_blank" class="sbtn sbtn_white s8__btn">Купить комплект Ergomotion по акции от 59 900
+									<a href="#" class="sbtn sbtn_white s8__btn">Купить комплект Ergomotion по акции от 59 900
 								₽</a>
-									<a href="https://www.askona.ru/brands/ergomotion/?step=1" target="_blank" class="sbtn sbtn_white s8__btn-mob">Купить Ergomotion от 59 900 ₽</a>
+									<a href="#" class="sbtn sbtn_white s8__btn-mob">Купить Ergomotion от 59 900 ₽</a>
 								</div>
 							</div>
 							<div>
@@ -749,13 +751,16 @@
 					<div class="container">
 						<ul class="footer__list">
 							<li>
-								<a href="https://www.askona.ru/" target="_blank">Ссылка на сайт</a>
+								<a href="#">Ссылка на сайт</a>
 							</li>
 							<li>
-								<a href="https://www.askona.ru/brands/ergomotion/?step=1" target="_blank">Ссылка на продукт</a>
+								<a href="#">Ссылка на продукт</a>
 							</li>
 							<li>
-								<a href="#" target="_blank">Условия розыгрыша</a>
+								<a href="#">Часто задаваемые вопросы</a>
+							</li>
+							<li>
+								<a href="#">Условия розыгрыша</a>
 							</li>
 						</ul>
 					</div>
@@ -780,14 +785,14 @@
 						<label class="sform__cb">
 							<input type="checkbox" checked="">
 							<span></span>
-							<span>Я принимаю <a href="./img/polit.pdf" target="_blank">условия обработки и защиты персональных данных</a>
+							<span>Я принимаю <a href="#" target="_blank">условия обработки и защиты персональных данных</a>
 							</span>
 						</label>
 					</div>
 					<div class="sform__row">
 						<button type="submit" class="sbtn sbtn_inv">Отправить</button>
 					</div>
-					<!--<a href="#" class="sform__close"></a>-->
+					<!--				<a href="#" class="sform__close"></a>-->
 				</form>
 			</div>
 			<div id="popup-thank" class="zoom-anim-dialog mfp-hide">
