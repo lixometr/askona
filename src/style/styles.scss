@@ -646,7 +646,7 @@ body {
 
 .s2-body__images {
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 
 	& > * {
 		width: 100%;
@@ -705,7 +705,7 @@ body {
 	// cursor: pointer;
 	user-select: none;
 	position: absolute;
-	transition: .6s;
+	transition: 0.6s;
 
 	&:hover {
 		.s2-organ__text {
@@ -879,7 +879,7 @@ body {
 
 .s2__item {
 	display: none;
-	height: 410px;
+	// height: 450px;
 
 	&.active {
 		display: block;
@@ -1587,7 +1587,9 @@ body {
 		color: #ffffff;
 		background: rgba(255, 255, 255, 0.1);
 		box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
-
+		&::-webkit-input-placeholder {
+			line-height: normal !important;
+		}
 		@include placeholder {
 			color: #ffffff;
 		}
@@ -1764,7 +1766,6 @@ body {
 
 		&.clouds_all_mob {
 			display: none;
-			width: 150%;
 
 			@media screen and (max-width: 800px) {
 				display: block;
@@ -2028,22 +2029,34 @@ body {
 			color: inherit;
 			height: auto;
 			margin-top: 0;
+			margin-left: 0;
 			margin-bottom: 0;
 		}
 		.button {
 			display: none;
 		}
-		
 	}
 	.selectric-items {
-		background: rgba(255, 255, 255, 0.5);
+		background: #fff;
 		box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+		border-radius: 0px 0px 6px 6px;
 		li {
+			color: #03203B;
 			background: transparent;
+			cursor: default;
 			&.selected {
 				background: #58dce3;
 				color: #03203b;
 			}
+			&:not(.selected):hover {
+				background: #e7e7e7;
+			}
+		}
+	}
+	.selectric-open {
+		.selectric {
+			border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 		}
 	}
 }

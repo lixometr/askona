@@ -21,7 +21,6 @@ function Parallax(options) {
                     y = (disallow && disallow === 'y') ? 0 : (relY - $this.height() / 2) / $this.height() * deep;
                 if (disallow && disallow === 'both') return;
                 // layers[j].style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px)';
-
                 gsap.to(layers[j], {
                     x: x,
                     y: y,
@@ -35,6 +34,7 @@ function Parallax(options) {
         const self = this
         const parallaxWrappers = document.querySelectorAll(this.nameSpaces.wrapper);
         for (var i = 0; i < parallaxWrappers.length; i++) {
+
             (function (i) {
                 parallaxWrappers[i].addEventListener('mousemove', (e) => {
                     self.onMouseMove(e, i)
@@ -46,7 +46,6 @@ function Parallax(options) {
     return this;
 }
 
-window.addEventListener('load', function () {
+
     new Parallax();
-});
 

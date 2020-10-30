@@ -1,5 +1,7 @@
 import SmoothScroll from './smooth-scroll'
 // if (!isMac) {
-    new SmoothScroll();
+    if($(window).width() > 768) {
+        new SmoothScroll();
+    }
 
 // }

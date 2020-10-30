@@ -137,7 +137,7 @@
 								<p class="s1__subtitle">
 									Невероятный мир Ergomotion - это погружение в здоровый и глубокий сон за 15 минут 
 								</p>
-								<a href="#askona" class="sbtn s1__btn">Принять участие</a>
+								<a href="#askona" class="scroll-link sbtn s1__btn">Принять участие</a>
 							</div>
 							<div class="s1__image">
 								<img src="img/header_image.png" alt="">
@@ -218,7 +218,7 @@
 											</div>
 											<div class="s2-author">
 												<div class="s2-author__img">
-													<img src="img/2/doctor.png" alt="">
+													<img src="img/2/doctor_2.png" alt="">
 												</div>
 												<div class="s2-author__text-1">Игнатова Ирина Александровна</div>
 												<div class="s2-author__text-2">врач-невролог</div>
@@ -239,7 +239,7 @@
 											</div>
 											<div class="s2-author">
 												<div class="s2-author__img">
-													<img src="img/2/doctor.png" alt="">
+													<img src="img/2/doctor_2.png" alt="">
 												</div>
 												<div class="s2-author__text-1">Игнатова Ирина Александровна</div>
 												<div class="s2-author__text-2">врач-невролог</div>
@@ -258,7 +258,7 @@
 											</div>
 											<div class="s2-author">
 												<div class="s2-author__img">
-													<img src="img/2/doctor.png" alt="">
+													<img src="img/2/doctor_3.png" alt="">
 												</div>
 												<div class="s2-author__text-1">Яковлева Наталья Дмитриевна</div>
 												<div class="s2-author__text-2">врач-эндокринолог, кмн</div>
@@ -276,7 +276,7 @@
 											</div>
 											<div class="s2-author">
 												<div class="s2-author__img">
-													<img src="img/2/doctor.png" alt="">
+													<img src="img/2/doctor_3.png" alt="">
 												</div>
 												<div class="s2-author__text-1">Яковлева Наталья Дмитриевна</div>
 												<div class="s2-author__text-2">врач-эндокринолог, кмн</div>
@@ -566,9 +566,7 @@
 									<div class="sform__row">
 										<input type="text" placeholder="Имя*" required autocomplete="nope">
 									</div>
-									<div class="sform__row">
-										<input type="text" placeholder="Instagram nickname*" required autocomplete="nope">
-									</div>
+									
 									<div class="sform__row">
 										<input type="email" placeholder="E-mail" autocomplete="nope">
 									</div>
@@ -596,6 +594,8 @@
 
 							<img class="clouds_all" src="img/6/clouds_all.png" alt="">
 							<img class="clouds_all" src="img/6/clouds_all.png" alt="">
+							<img class="clouds_all_mob" src="img/6/clouds_all_mob.png" alt="">
+							<img class="clouds_all_mob" src="img/6/clouds_all_mob.png" alt="">
 							<img class="clouds_all_mob" src="img/6/clouds_all_mob.png" alt="">
 							<img class="clouds_all_mob" src="img/6/clouds_all_mob.png" alt="">
 

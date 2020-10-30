@@ -1,6 +1,7 @@
 import throttle from "lodash.throttle"
 const check = () => {
     const scrollTop = $(window).scrollTop()
+    console.log(scrollTop)
     if (scrollTop >= 60) {
         $('.bottom-btn').addClass('top')
     } else {
