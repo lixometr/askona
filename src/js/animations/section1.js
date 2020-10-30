@@ -4,53 +4,58 @@ const throttle = require("lodash.throttle")
  * autoAlfa: 0
  * visibilit: hidden;
  */
-gsap.to('.galaxy', {
-    scrollTrigger: {
-        trigger: ".s1",
-        pin: false,
-        start: "top top-=200px",
-        duration: 1,
-        toggleActions: "play reverse reverse reverse",
+function scrollParallax() {
+    gsap.to('.galaxy', {
+        scrollTrigger: {
+            trigger: ".s1",
+            pin: false,
+            start: "top top-=200px",
+            duration: 1,
+            toggleActions: "play reverse reverse reverse",
+    
+    
+            // end: "+=400",
+            scrub: false, // fix can be in seconds (smooth delay)
+            // once: true
+    
+        },
+        y: -300
+    })
+    gsap.to('.s1__box', {
+        scrollTrigger: {
+            trigger: ".s1",
+            pin: false,
+            start: "top top-=200px",
+            duration: .9,
+            toggleActions: "play none none reverse",
+    
+            // end: "+=400",
+            scrub: false, // fix can be in seconds (smooth delay)
+            // once: true
+    
+        },
+        y: -100
+    })
+    gsap.to('.s1__image', {
+        scrollTrigger: {
+            trigger: ".s1",
+            pin: false,
+            start: "top top=-200px",
+            toggleActions: "play none none reverse",
+    
+            // end: "+=200",
+            duration: .9,
+            scrub: false, // fix can be in seconds (smooth delay)
+            // once: true
+    
+        },
+        y: 40
+    })
+}
 
-
-        // end: "+=400",
-        scrub: false, // fix can be in seconds (smooth delay)
-        // once: true
-
-    },
-    y: -300
-})
-gsap.to('.s1__box', {
-    scrollTrigger: {
-        trigger: ".s1",
-        pin: false,
-        start: "top top-=200px",
-        duration: .9,
-        toggleActions: "play none none reverse",
-
-        // end: "+=400",
-        scrub: false, // fix can be in seconds (smooth delay)
-        // once: true
-
-    },
-    y: -100
-})
-gsap.to('.s1__image', {
-    scrollTrigger: {
-        trigger: ".s1",
-        pin: false,
-        start: "top top=-200px",
-        toggleActions: "play none none reverse",
-
-        // end: "+=200",
-        duration: .9,
-        scrub: false, // fix can be in seconds (smooth delay)
-        // once: true
-
-    },
-    y: 40
-})
-
+if($(window).width() > 600) {
+    scrollParallax()
+}
 
 // gsap.fromTo('.header__box, .s1__box', {
 //     opacity: 0,

@@ -332,6 +332,7 @@
 	.s5__clouds-bg {
 		img {
 			max-height: 1500px;
+			width: auto;
 		}
 	}
 
@@ -801,7 +802,7 @@
 		max-width: none;
 		width: 100%;
 		margin: 0;
-		padding: 30px 10px;
+		padding: 40px 30px;
 	}
 
 	.s6__box > *:nth-child(1) {
@@ -1055,7 +1056,7 @@
 	}
 
 	#popup-1 {
-		max-width: 270px;
+		
 	}
 
 	.popup-thank {

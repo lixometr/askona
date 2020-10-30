@@ -11,13 +11,14 @@ ScrollTrigger.defaults({
 global.gsap = gsap
 
 import Stars from './stars'
+import Popup from "./popup"
 
 global.Stars = Stars
 const preloader = new Preloader
 // preloader.show()
 $(window).on('load', () => {
     preloader.hide()
-    
+    new Popup('#popup-1', '.s7__btn')
     require('./animations/section1')
     require('./animations/section2')
     require('./animations/section3')

@@ -8,7 +8,6 @@ class CursorFollow {
     }
     makeActive() {
         this.el.classList.add('active')
-        console.log('active')
     }
     removeActive() {
         this.el.classList.remove('active')

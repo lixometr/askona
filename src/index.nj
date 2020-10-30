@@ -764,8 +764,12 @@
 			</div>
 		</div>
 		<div class="popups">
-			<div id="popup-1" class="zoom-anim-dialog mfp-hide">
+			<div id="popup-1" class="zoom-anim-dialog ">
+				
 				<form class="sform invite-form">
+					<div class="close hover">
+						{% include "img/close.svg" %}
+					</div>
 					<p class="sform__heading">Заполните форму для приглашения</p>
 					<div class="sform__row">
 						<input type="text" placeholder="Имя*" required="" autocomplete="nope">
@@ -789,6 +793,7 @@
 					</div>
 					<!--<a href="#" class="sform__close"></a>-->
 				</form>
+				<div class="popup-overlay"></div>
 			</div>
 			<div id="popup-thank" class="zoom-anim-dialog mfp-hide">
 				<div class="popup-thank">

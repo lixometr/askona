@@ -1371,6 +1371,8 @@ body {
 		top: 0;
 		transform: translate(-50%);
 		max-width: none;
+		max-height: 2300px;
+		width: 120%;
 	}
 }
 
@@ -1587,9 +1589,7 @@ body {
 		color: #ffffff;
 		background: rgba(255, 255, 255, 0.1);
 		box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
-		&::-webkit-input-placeholder {
-			line-height: normal !important;
-		}
+
 		@include placeholder {
 			color: #ffffff;
 		}
@@ -1602,6 +1602,11 @@ body {
 			@include placeholder {
 				color: rgba(255, 255, 255, 0.3) !important;
 			}
+		}
+	}
+	input {
+		&::-webkit-input-placeholder {
+			line-height: normal !important;
 		}
 	}
 
@@ -2041,7 +2046,7 @@ body {
 		box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
 		border-radius: 0px 0px 6px 6px;
 		li {
-			color: #03203B;
+			color: #03203b;
 			background: transparent;
 			cursor: default;
 			&.selected {
@@ -2056,7 +2061,7 @@ body {
 	.selectric-open {
 		.selectric {
 			border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
+			border-bottom-right-radius: 0;
 		}
 	}
 }
@@ -2250,7 +2255,39 @@ body {
 
 #popup-1 {
 	margin: 0 auto;
-	max-width: 408px;
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 700;
+	.invite-form {
+		position: absolute;
+		max-width: 400px;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+	}
+	.popup-overlay {
+		background: rgba(0, 0, 0, 0.3);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	.close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
 }
 
 #popup-thank {

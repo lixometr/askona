@@ -132,7 +132,6 @@ class Slider {
         const self = this
         this.tabs.on('click', function () {
             const idx = $(this).index()
-            console.log(idx)
             self.setSlide(idx)
         })
         this.arrowNext.on('click', () => {
