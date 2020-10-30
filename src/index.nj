@@ -1,89 +1,60 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-	{% include "template/head.html" %}
-	<title>Askona</title>
-</head>
+	<head>
+		{% include "template/head.html" %}
+		<title>Askona</title>
+	</head>
 
-<body>
-	<div class="preloader">
-		<div class="element">
-			<span><span></span></span>
-			<span><span></span></span>
-			<span><span></span></span>
-			<span><span></span></span>
-			<span><span></span></span>
-			<span><span></span></span>
-			<span><span></span></span>
-			<span><span></span></span>
-			<!-- <span></span> -->
-		</div>
-	</div>
-	<header class="header">
-		<div class="container">
-			<div class="header__box">
-				<a href="/" class="header__logo">
-					<img src="img/logo.svg" alt="">
-				</a>
-				<div class="header__menu-btn hover">
-					<div class="menu-icon">
-						<span></span>
-						<span></span>
-					</div>
-					<div class="ring"></div>
-				</div>
+	<body>
+		<div class="preloader">
+			<div class="element">
+				<span>
+					<span></span></span>
+				<span>
+					<span></span></span>
+				<span>
+					<span></span></span>
+				<span>
+					<span></span></span>
+				<span>
+					<span></span></span>
+				<span>
+					<span></span></span>
+				<span>
+					<span></span></span>
+				<span>
+					<span></span></span>
+				<!-- <span></span> -->
 			</div>
 		</div>
-		<ul class="switcher">
-			<li class="switcher__item switcher__item_active"></li>
-			<li class="switcher__item hover "></li>
-			<li class="switcher__item hover"></li>
-			<li class="switcher__item hover"></li>
-			<li class="switcher__item hover"></li>
-			<li class="switcher__item hover"></li>
-		</ul>
-		<a href="#" class="bottom-btn">
-			{% include "./img/arrow_bottom.svg" %}
-		</a>
-
-		<ul class="socials">
-			<li>
-				<a href="#" target="_blank"><img src="img/social/vk.svg" alt=""></a>
-			</li>
-			<li>
-				<a href="#" target="_blank"><img src="img/social/ok.svg" alt=""></a>
-			</li>
-			<li>
-				<a href="#" target="_blank"><img src="img/social/fb.svg" alt=""></a>
-			</li>
-			<li>
-				<a href="#" target="_blank"><img src="img/social/inst.svg" alt=""></a>
-			</li>
-		</ul>
-		<div class="header__menu">
-			<ul class="header__links">
-				<li>
-					<a href="#sleep-phiziology" class="scroll-link header__link header__link_active"
-						data-offset="-100">Физиология сна</a>
-				</li>
-				<li>
-					<a href="#health-technology" class="scroll-link header__link" data-offset="-100">Технология
-						здорового сна</a>
-				</li>
-				<li>
-					<a href="#askona" class="scroll-link header__link">Розыгрыш ОТ АSKONA</a>
-				</li>
-				<li>
-					<a href="#how-to-take-part" class="scroll-link header__link" data-offset="100">Как участвовать?</a>
-				</li>
-				<li>
-					<a href="#interaktiv" class="scroll-link header__link">Интерактивная выставка</a>
-				</li>
-				<li>
-					<a href="#health-map" class="scroll-link header__link">Карта здорового сна</a>
-				</li>
+		<header class="header">
+			<div class="container">
+				<div class="header__box">
+					<a href="/" class="header__logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+					<div class="header__menu-btn hover">
+						<div class="menu-icon">
+							<span></span>
+							<span></span>
+						</div>
+						<div class="ring"></div>
+					</div>
+				</div>
+			</div>
+			<ul class="switcher">
+				<li class="switcher__item switcher__item_active"></li>
+				<li class="switcher__item hover "></li>
+				<li class="switcher__item hover"></li>
+				<li class="switcher__item hover"></li>
+				<li class="switcher__item hover"></li>
+				<li class="switcher__item hover"></li>
 			</ul>
+			<a href="#" class="bottom-btn">
+				{% include "./img/arrow_bottom.svg" %}
+			</a>
+
 			<ul class="socials">
 				<li>
 					<a href="#" target="_blank"><img src="img/social/vk.svg" alt=""></a>
@@ -98,706 +69,744 @@
 					<a href="#" target="_blank"><img src="img/social/inst.svg" alt=""></a>
 				</li>
 			</ul>
-		</div>
-	</header>
-
-	<div class="wrapper-all">
+			<div class="header__menu">
+				<ul class="header__links">
+					<li>
+						<a href="#sleep-phiziology" class="scroll-link header__link header__link_active"
+						data-offset="-100">Физиология сна</a>
+					</li>
+					<li>
+						<a href="#health-technology" class="scroll-link header__link" data-offset="-100">Технология
+						здорового сна</a>
+					</li>
+					<li>
+						<a href="#askona" class="scroll-link header__link">Розыгрыш ОТ АSKONA</a>
+					</li>
+					<li>
+						<a href="#how-to-take-part" class="scroll-link header__link" data-offset="100">Как участвовать?</a>
+					</li>
+					<li>
+						<a href="#interaktiv" class="scroll-link header__link">Интерактивная выставка</a>
+					</li>
+					<li>
+						<a href="#health-map" class="scroll-link header__link">Карта здорового сна</a>
+					</li>
+				</ul>
+				<ul class="socials">
+					<li>
+						<a href="#" target="_blank"><img src="img/social/vk.svg" alt=""></a>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="img/social/ok.svg" alt=""></a>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="img/social/fb.svg" alt=""></a>
+					</li>
+					<li>
+						<a href="#" target="_blank"><img src="img/social/inst.svg" alt=""></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="data-scroll-box">
+			<div class="wrapper-all " data-scroll>
 		<canvas id="stars"></canvas>
 
-		<div class="sblock s1">
-			<div class="container">
-				<div class="s1__row">
-					<div class="s1__box">
-						<h1 class="s1__title">
-							<b>РОЗЫГРЫШ</b> СПАЛЬНОЙ СИСТЕМЫ ОТ ASKONA
+				<div class="sblock s1">
+					<div class="container">
+						<div class="s1__row">
+							<div class="s1__box">
+								<h1 class="s1__title">
+									<b>РОЗЫГРЫШ</b> СПАЛЬНОЙ СИСТЕМЫ ОТ ASKONA
 						</h1>
-						<p class="s1__subtitle">Невероятный мир Ergomotion - это погружение в здоровый и глубокий сон за
+								<p class="s1__subtitle">Невероятный мир Ergomotion - это погружение в здоровый и глубокий сон за
 							15
 							минут </p>
-						<a href="#" class="sbtn s1__btn">Принять участие</a>
-					</div>
-					<div class="s1__image">
-						<img src="img/header_image.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="galaxy">
-			<img src="img/galaxy.png" alt="">
-		</div>
-		<div class="sblock s2" id="sleep-phiziology">
-			<div class="container">
-				<div class="s2__box">
-					<div>
-						<div class="s2__left">
-							<div class="s2-body__images s2__images">
-								<div class="s2-body__image active">
-									<img src="./img/2/slider/1.svg" />
-								</div>
-								<div class="s2-body__image">
-									<img src="./img/2/slider/2.svg" />
-								</div>
-								<div class="s2-body__image">
-									<img src="./img/2/slider/3.svg" />
-								</div>
-								<div class="s2-body__image">
-									<img src="./img/2/slider/4.svg" />
-								</div>
+								<a href="#" class="sbtn s1__btn">Принять участие</a>
 							</div>
-							<ul class="s2__organs">
-								<li class="s2-organ hover s2-organ_active s2-organ-1" data-index="1">
-									<div class="s2-organ__img">
-										{% include "./img/2/1.svg" %}
-									</div>
-									<span class="s2-organ__text">Позвоночник</span>
-								</li>
-								<li class="s2-organ hover s2-organ-2" data-index="2">
-									<div class="s2-organ__img">
-										{% include "./img/2/2.svg" %}
-
-									</div>
-									<span class="s2-organ__text">Мозг</span>
-								</li>
-								<li class="s2-organ hover s2-organ-3" data-index="3">
-									<div class="s2-organ__img">
-										{% include "./img/2/3.svg" %}
-
-									</div>
-									<span class="s2-organ__text">Гормоны</span>
-								</li>
-								<li class="s2-organ hover s2-organ-4" data-index="4">
-									<div class="s2-organ__img">
-										{% include "./img/2/4.svg" %}
-
-									</div>
-									<span class="s2-organ__text">Сердце</span>
-								</li>
-							</ul>
+							<div class="s1__image">
+								<img src="img/header_image.png" alt="">
+							</div>
 						</div>
 					</div>
-					<div>
-						<h3 class="stitle s2__title">Физиология сна</h3>
-						<div class="s2__slider">
-							<div class="sslider s2__items">
-								<div class="s2__item active">
-									<div class="stext s2__text">
-										<p>Позвоночник обеспечивает способность двигаться, а значит, добиваться целей.
+				</div>
+				<div class="galaxy">
+					<img src="img/galaxy.png" alt="">
+				</div>
+				<div class="sblock s2" id="sleep-phiziology">
+					<div class="container">
+						<div class="s2__box">
+							<div>
+								<div class="s2__left">
+									<div class="s2-body__images s2__images">
+										<div class="s2-body__image active">
+											<img src="./img/2/slider/1.svg"/>
+										</div>
+										<div class="s2-body__image">
+											<img src="./img/2/slider/2.svg"/>
+										</div>
+										<div class="s2-body__image">
+											<img src="./img/2/slider/3.svg"/>
+										</div>
+										<div class="s2-body__image">
+											<img src="./img/2/slider/4.svg"/>
+										</div>
+									</div>
+									<ul class="s2__organs">
+										<li class="s2-organ hover s2-organ_active s2-organ-1" data-index="1">
+											<div class="s2-organ__img">
+												{% include "./img/2/1.svg" %}
+											</div>
+											<span class="s2-organ__text">Позвоночник</span>
+										</li>
+										<li class="s2-organ hover s2-organ-2" data-index="2">
+											<div class="s2-organ__img">
+												{% include "./img/2/2.svg" %}
+
+											</div>
+											<span class="s2-organ__text">Мозг</span>
+										</li>
+										<li class="s2-organ hover s2-organ-3" data-index="3">
+											<div class="s2-organ__img">
+												{% include "./img/2/3.svg" %}
+
+											</div>
+											<span class="s2-organ__text">Гормоны</span>
+										</li>
+										<li class="s2-organ hover s2-organ-4" data-index="4">
+											<div class="s2-organ__img">
+												{% include "./img/2/4.svg" %}
+
+											</div>
+											<span class="s2-organ__text">Сердце</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div>
+								<h3 class="stitle s2__title">Физиология сна</h3>
+								<div class="s2__slider">
+									<div class="sslider s2__items">
+										<div class="s2__item active">
+											<div class="stext s2__text">
+												<p>Позвоночник обеспечивает способность двигаться, а значит, добиваться целей.
 											Гибкость, стабильность, распределение нагрузки – эти качества нужны не
 											только
 											вам, но и позвоночнику.</p>
-										<p>Во время сна важно поддерживать позвоночник в естественном выпрямленном
+												<p>Во время сна важно поддерживать позвоночник в естественном выпрямленном
 											состоянии, а мышечный корсет должен быть равномерно расслаблен. Это позволит
 											проснуться без болей в спине и шее. </p>
-										<p>На позвоночник влияет вся экосистема сна – положение основания, жесткость
+												<p>На позвоночник влияет вся экосистема сна – положение основания, жесткость
 											матраса, размер и мягкость подушки, постельное белье, одежда и даже ваша
 											поза.
 										</p>
-									</div>
-									<div class="s2-author">
-										<div class="s2-author__img">
-											<img src="img/2/doctor.png" alt="">
+											</div>
+											<div class="s2-author">
+												<div class="s2-author__img">
+													<img src="img/2/doctor.png" alt="">
+												</div>
+												<div class="s2-author__text-1">Иван Иванович Иванов</div>
+												<div class="s2-author__text-2">врач-вертебролог, дмн</div>
+											</div>
 										</div>
-										<div class="s2-author__text-1">Иван Иванович Иванов</div>
-										<div class="s2-author__text-2">врач-вертебролог, дмн</div>
-									</div>
-								</div>
-								<div class="s2__item">
-									<div class="stext s2__text">
-										<p>Пока вы спите, мозг переходит в особый режим, чтобы восстановить способности
+										<div class="s2__item">
+											<div class="stext s2__text">
+												<p>Пока вы спите, мозг переходит в особый режим, чтобы восстановить способности
 											активно жить, работать и принимать верные решения.</p>
 
-										<p>Сон активизирует нейронные процессы в теменной зоне, что влияет на скорость
+												<p>Сон активизирует нейронные процессы в теменной зоне, что влияет на скорость
 											реакций. Префронтальная кора мозга улучшает работу, отвечая
 											за формулировку сложных мыслей. Во сне снижаются риски развития деменции,
 											неврозов и психических расстройств. </p>
-										<p>
+												<p>
 											Особенно важна фаза быстрого сна – она отвечает за «перезагрузку» мозга
 											и нервной системы. Пробуждение из-за любого дискомфорта нарушает фазу и
 											делает
 											сон неполноценным.</p>
-									</div>
-									<div class="s2-author">
-										<div class="s2-author__img">
-											<img src="img/2/doctor.png" alt="">
+											</div>
+											<div class="s2-author">
+												<div class="s2-author__img">
+													<img src="img/2/doctor.png" alt="">
+												</div>
+												<div class="s2-author__text-1">Иван Иванович Иванов</div>
+												<div class="s2-author__text-2">врач-вертебролог, дмн</div>
+											</div>
 										</div>
-										<div class="s2-author__text-1">Иван Иванович Иванов</div>
-										<div class="s2-author__text-2">врач-вертебролог, дмн</div>
-									</div>
-								</div>
-								<div class="s2__item">
-									<div class="stext s2__text">
-										<p>С полуночи и до 4-х утра синтез ключевого «сонного» гормона мелатонина
+										<div class="s2__item">
+											<div class="stext s2__text">
+												<p>С полуночи и до 4-х утра синтез ключевого «сонного» гормона мелатонина
 											возрастает
 											в десятки раз, он держит в балансе иммунитет и артериальное давление.</p>
 
-										<p>Максимум гормона роста (соматотропина) организм производит через 2 часа после
+												<p>Максимум гормона роста (соматотропина) организм производит через 2 часа после
 											засыпания, клетки обновляются, а раны заживают.</p>
 
-										<p>Иронично, но мужские и женские репродуктивные гормоны активизируются именно
+												<p>Иронично, но мужские и женские репродуктивные гормоны активизируются именно
 											ночью.</p>
 
-										<p>В погоне за мечтами вам и помогает, и мешает кортизол – гормон стресса. Если
+												<p>В погоне за мечтами вам и помогает, и мешает кортизол – гормон стресса. Если
 											его
 											мало, вы не можете работать, если много – напряжены до предела. Все просто.
 											Кортизол расходуется днем, а восполняется ночью.</p>
-									</div>
-									<div class="s2-author">
-										<div class="s2-author__img">
-											<img src="img/2/doctor.png" alt="">
+											</div>
+											<div class="s2-author">
+												<div class="s2-author__img">
+													<img src="img/2/doctor.png" alt="">
+												</div>
+												<div class="s2-author__text-1">Иван Иванович Иванов</div>
+												<div class="s2-author__text-2">врач-вертебролог, дмн</div>
+											</div>
 										</div>
-										<div class="s2-author__text-1">Иван Иванович Иванов</div>
-										<div class="s2-author__text-2">врач-вертебролог, дмн</div>
-									</div>
-								</div>
-								<div class="s2__item">
-									<div class="stext s2__text">
-										<p>Быть успешным, значит, точно оценивать риски и предвосхищать опасность.
+										<div class="s2__item">
+											<div class="stext s2__text">
+												<p>Быть успешным, значит, точно оценивать риски и предвосхищать опасность.
 											Быстрое
 											засыпание и глубокий сон значительно снижают риски хронических воспалений в
 											сердечной ткани и сосудах.</p>
 
-										<p>Авторитетный научный журнал Cardiovascular Research со ссылкой на проект
+												<p>Авторитетный научный журнал Cardiovascular Research со ссылкой на проект
 											LIFEPATH, объединяющий 9 рабочих групп ученых-кардиологов ведущих институтов
 											мира, приводит результаты исследований влияния сна на снижение смертельных
 											рисков.</p>
 
-										<p>Так, полноценный здоровый сон снижает риск атеросклероза на 27%, инфаркта –
+												<p>Так, полноценный здоровый сон снижает риск атеросклероза на 27%, инфаркта –
 											от 14
 											до 35%, инсульта – на 30% и коронарной болезни сердца – до 60%. Спите, чтобы
 											жить!</p>
-									</div>
-									<div class="s2-author">
-										<div class="s2-author__img">
-											<img src="img/2/doctor.png" alt="">
+											</div>
+											<div class="s2-author">
+												<div class="s2-author__img">
+													<img src="img/2/doctor.png" alt="">
+												</div>
+												<div class="s2-author__text-1">Иван Иванович Иванов</div>
+												<div class="s2-author__text-2">врач-вертебролог, дмн</div>
+											</div>
 										</div>
-										<div class="s2-author__text-1">Иван Иванович Иванов</div>
-										<div class="s2-author__text-2">врач-вертебролог, дмн</div>
+									</div>
+									<div class="slider-arrows">
+										<button class="slider-arrow-prev slider-arrow"></button>
+										<button class="slider-arrow-next slider-arrow"></button>
 									</div>
 								</div>
-							</div>
-							<div class="slider-arrows">
-								<button class="slider-arrow-prev slider-arrow"></button>
-								<button class="slider-arrow-next slider-arrow"></button>
+
 							</div>
 						</div>
-
 					</div>
 				</div>
-			</div>
-		</div>
 
-		<div class="sblock s3">
-			<div class="s3__bg">
-				<img class="s3__image-2" src="img/3/1.png" alt="">
-				<img class="s3__image-1" src="img/3/2.png" alt="">
-			</div>
-			<div class="container">
-				<div class="s3__box">
-					<h3 class="stitle s3__title">Успех начинается с мечты</h3>
-					<div class="stext s3__text">
-						<p>Мечты рождаются наедине с собой. У каждого из нас есть для этого свои ритуалы – теплая ванна,
+				<div class="sblock s3">
+					<div class="s3__bg">
+						<img class="s3__image-2" src="img/3/1.png" alt="">
+						<img class="s3__image-1" src="img/3/2.png" alt="">
+					</div>
+					<div class="container">
+						<div class="s3__box">
+							<h3 class="stitle s3__title">Успех начинается с мечты</h3>
+							<div class="stext s3__text">
+								<p>Мечты рождаются наедине с собой. У каждого из нас есть для этого свои ритуалы – теплая ванна,
 							кружка горячего какао, новая книга, любимая музыка или медитативные практики. Но цель всегда
 							одна – остановиться, понять себя и свои истинные желания.</p>
-						<p>Доверьте себя полету, и космос никогда не закончится!</p>
+								<p>Доверьте себя полету, и космос никогда не закончится!</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
 
-		<div class="sblock s4 " id="health-technology">
-			<div class="container">
-				<div class="s4__box">
-					<div class="s4__images">
-						<div class="s4__img active">
-							<img src="img/4/1.svg" alt="">
-						</div>
-						<div class="s4__img">
-							<img style="max-width: 500px" src="img/4/2.svg" alt="">
-						</div>
-						<div class="s4__img">
-							<img src="img/4/3.svg" alt="">
-						</div>
+				<div class="sblock s4 " id="health-technology">
+					<div class="container">
+						<div class="s4__box">
+							<div class="s4__images">
+								<div class="s4__img active">
+									<img src="img/4/1.svg" alt="">
+								</div>
+								<div class="s4__img">
+									<img style="max-width: 500px" src="img/4/2.svg" alt="">
+								</div>
+								<div class="s4__img">
+									<img src="img/4/3.svg" alt="">
+								</div>
 
-					</div>
-					<div>
-						<h3 class="stitle s4__title">Технология здорового сна</h3>
-						<div class="s4__slider">
-							<div class="sslider s4__items">
-								<div class="s4__item active">
-									<div class="stext s4__text">
-										<p>Спальная система от Askona – это серия трансформируемых оснований Ergomotion
+							</div>
+							<div>
+								<h3 class="stitle s4__title">Технология здорового сна</h3>
+								<div class="s4__slider">
+									<div class="sslider s4__items">
+										<div class="s4__item active">
+											<div class="stext s4__text">
+												<p>Спальная система от Askona – это серия трансформируемых оснований Ergomotion
 											и
 											специальные анатомические матрасы. Такую систему можно использовать
 											самостоятельно, с изголовьем, либо встроить в вашу кровать.</p>
-										<p>Уникальность разработки – в способности основания менять свое положение,
+												<p>Уникальность разработки – в способности основания менять свое положение,
 											обеспечивая при этом полное расслабление и снятие мышечных спазмов.
 											Специальные
 											режимы позволяют не только спать, но и читать, смотреть ТВ и даже работать с
 											пользой для сердца, позвоночника и мышц.</p>
-										<p>Согласитесь, возможности интригуют? Давайте, расскажем подробнее!</p>
-									</div>
-									<ul class="s4__btns">
-										<li>
-											<a href="#" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
-										</li>
-										<li>
-											<a href="#" class="sbtn s4__btn-2">Купить систему сна</a>
-										</li>
-									</ul>
-								</div>
-								<div class="s4__item">
-									<div class="stext s4__text">
-										<p>Основание Ergomotion выполнено из эвкалипта, металла, ткани, полимеров
+												<p>Согласитесь, возможности интригуют? Давайте, расскажем подробнее!</p>
+											</div>
+											<ul class="s4__btns">
+												<li>
+													<a href="#" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
+												</li>
+												<li>
+													<a href="#" class="sbtn s4__btn-2">Купить систему сна</a>
+												</li>
+											</ul>
+										</div>
+										<div class="s4__item">
+											<div class="stext s4__text">
+												<p>Основание Ergomotion выполнено из эвкалипта, металла, ткани, полимеров
 											высокого
 											качества и имеет совершенный дизайн. Менять положение вы можете с помощью
 											своего
 											смартфона.</p>
 
-										<p>Полное расслабление за 15 минут происходит в режиме Zero G – положении
+												<p>Полное расслабление за 15 минут происходит в режиме Zero G – положении
 											эмбриона.
 											Сердце при этом располагается ниже уровня ног, и тело плавно погружается в
 											невесомость.</p>
 
-										<p>Поднятое на 7 градусов изголовье в режиме «Антихрап» позволяет избежать апноэ
+												<p>Поднятое на 7 градусов изголовье в режиме «Антихрап» позволяет избежать апноэ
 											сна
 											в течение всей ночи.</p>
 
-										<p>Листайте дальше и узнайте, как управлять жизнью даже тогда, когда вы в
+												<p>Листайте дальше и узнайте, как управлять жизнью даже тогда, когда вы в
 											кровати!
 										</p>
-									</div>
-									<ul class="s4__btns">
-										<li>
-											<a href="#" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
-										</li>
-										<li>
-											<a href="#" class="sbtn s4__btn-2">Купить систему сна</a>
-										</li>
-									</ul>
-								</div>
-								<div class="s4__item">
-									<div class="stext s4__text">
-										<p>2020-й год изменил жизнь и распорядок дня на долгие годы вперед. Теперь от
+											</div>
+											<ul class="s4__btns">
+												<li>
+													<a href="#" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
+												</li>
+												<li>
+													<a href="#" class="sbtn s4__btn-2">Купить систему сна</a>
+												</li>
+											</ul>
+										</div>
+										<div class="s4__item">
+											<div class="stext s4__text">
+												<p>2020-й год изменил жизнь и распорядок дня на долгие годы вперед. Теперь от
 											спальни нужно больше, чем раньше.</p>
 
-										<p>Ergomotion меняет положения для отдыха, сна и работы – теперь можно проводить
+												<p>Ergomotion меняет положения для отдыха, сна и работы – теперь можно проводить
 											совещания в кровати без вреда для осанки. Режимы массажа снимут статическое
 											напряжение и улучшат микроциркуляцию. </p>
 
-										<p>Анатомический беспружинный матрас, созданный специально для оснований
+												<p>Анатомический беспружинный матрас, созданный специально для оснований
 											Egromotion,
 											обладает памятью формы и обеспечивает полноценную поддержку позвоночника во
 											время отдыха.</p>
 
-										<p>LED-подсветка, USB-разъемы и таймер – опции, завершающие экосистему удобного
+												<p>LED-подсветка, USB-разъемы и таймер – опции, завершающие экосистему удобного
 											и
 											комфортного сна в мегаполисе.</p>
+											</div>
+											<ul class="s4__btns">
+												<li>
+													<a href="#" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
+												</li>
+												<li>
+													<a href="#" class="sbtn s4__btn-2">Купить систему сна</a>
+												</li>
+											</ul>
+										</div>
 									</div>
-									<ul class="s4__btns">
+									<div class="slider-arrows">
+										<button class="slider-arrow-prev slider-arrow"></button>
+										<button class="slider-arrow-next slider-arrow"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="s4__clouds parallax-layer" data-parallax-deep="-100" data-parallax-disallow="x">
+						<div class="s4__clouds-items">
+							<img src="img/4/cl-1.png" alt="">
+							<img src="img/4/cl-1.png" alt="">
+							<img src="img/4/cl-1.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="sblock s5 parallax" id="askona">
+					<div class="s5__clouds-bg">
+						<img src="img/5/clouds-bg.png" alt="">
+					</div>
+					<div class="container">
+						<div class="s5__box">
+							<div>
+								<h3 class="stitle s5__title">Розыгыш спальной <br>системы от Askona</h3>
+								<div class="s5__img-mob">
+									<img src="img/5/mob/1.png" alt="">
+									<img src="img/5/mob/2.png" alt="">
+									<img src="img/5/mob/3.png" alt="">
+									<img class="bed " src="img/5/bed.png" alt="">
+									<img src="img/5/mob/5.png" alt="">
+									<img src="img/5/mob/6.png" alt="">
+								</div>
+								<div class="stext s5__text">
+									<p>Примите участие в розыгрыше и выиграйте:</p>
+									<ul>
+										<li>один из 3-х комплектов трансформируемого основания Ergomotion 200*140 модель 633 с
+									матрасом Hybrid стоимостью 149 990 ₽</li>
+										<li>один из 20-ти подарочных сертификатов на любые товары Askona номиналом 20 000, 15
+									000,
+									10 000 и 5 000 ₽</li>
+									</ul>
+								</div>
+
+								<div class="s5-timer">
+									<p class="s5-timer__text">До розыгрыша осталось:</p>
+									<ul class="s5-timer__values">
 										<li>
-											<a href="#" class="sbtn sbtn_inv s4__btn-1">Выиграть систему сна</a>
+											<div class="s5-timer__value s5-timer__value_1">
+												<div class="s5-timer__value-bg">
+													{%include "./img/5/timer.svg"%}
+
+												</div>
+												<div class="s5-timer__value-num"></div>
+												<div class="s5-timer__value-text"></div>
+											</div>
 										</li>
 										<li>
-											<a href="#" class="sbtn s4__btn-2">Купить систему сна</a>
+											<div class="s5-timer__value s5-timer__value_2">
+												<div class="s5-timer__value-bg">
+													{%include "./img/5/timer.svg"%}
+
+												</div>
+												<div class="s5-timer__value-num"></div>
+												<div class="s5-timer__value-text"></div>
+											</div>
+										</li>
+										<li>
+											<div class="s5-timer__value s5-timer__value_3">
+												<div class="s5-timer__value-bg">
+													{%include "./img/5/timer.svg"%}
+
+												</div>
+												<div class="s5-timer__value-num"></div>
+												<div class="s5-timer__value-text"></div>
+											</div>
 										</li>
 									</ul>
 								</div>
 							</div>
-							<div class="slider-arrows">
-								<button class="slider-arrow-prev slider-arrow"></button>
-								<button class="slider-arrow-next slider-arrow"></button>
+							<div>
+								<div class="s5__img ">
+									<div class="s5__clouds">
+										<!-- <img src="img/5/cl-1.png" alt=""> -->
+										<img class="parallax-layer" data-parallax-deep="-30" src="img/5/cl-2.png" alt="">
+										<img class="parallax-layer" data-parallax-deep="-50" src="img/5/cl-3.png" alt="">
+										<img class="parallax-layer" data-parallax-deep="-33" src="img/5/cl-4.png" alt="">
+										<img class="parallax-layer" data-parallax-deep="40" src="img/5/cl-5.png" alt="">
+										<img class="parallax-layer" data-parallax-deep="-40" src="img/5/cl-6.png" alt="">
+									</div>
+									<img class="parallax-layer" data-parallax-deep="-30" src="img/5/bed.png" alt="">
+								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
 
-			</div>
-			<div class="s4__clouds parallax-layer" data-parallax-deep="-100" data-parallax-disallow="x">
-				<div class="s4__clouds-items">
-					<img src="img/4/cl-1.png" alt="">
-					<img src="img/4/cl-1.png" alt="">
-					<img src="img/4/cl-1.png" alt="">
-				</div>
-			</div>
-		</div>
-
-		<div class="sblock s5 parallax" id="askona">
-			<div class="s5__clouds-bg">
-				<img src="img/5/clouds-bg.png" alt="">
-			</div>
-			<div class="container">
-				<div class="s5__box">
-					<div>
-						<h3 class="stitle s5__title">Розыгыш спальной <br>системы от Askona</h3>
-						<div class="s5__img-mob">
-							<img src="img/5/mob/1.png" alt="">
-							<img src="img/5/mob/2.png" alt="">
-							<img src="img/5/mob/3.png" alt="">
-							<img class="bed " src="img/5/bed.png" alt="">
-							<img src="img/5/mob/5.png" alt="">
-							<img src="img/5/mob/6.png" alt="">
-						</div>
-						<div class="stext s5__text">
-							<p>Примите участие в розыгрыше и выиграйте:</p>
-							<ul>
-								<li>один из 3-х комплектов трансформируемого основания Ergomotion 200*140 модель 633 с
-									матрасом Hybrid стоимостью 149 990 ₽</li>
-								<li>один из 20-ти подарочных сертификатов на любые товары Askona номиналом 20 000, 15
-									000,
-									10 000 и 5 000 ₽</li>
-							</ul>
-						</div>
-
-						<div class="s5-timer">
-							<p class="s5-timer__text">До розыгрыша осталось:</p>
-							<ul class="s5-timer__values">
-								<li>
-									<div class="s5-timer__value s5-timer__value_1">
-										<div class="s5-timer__value-bg">
-											{%include "./img/5/timer.svg"%}
-
-										</div>
-										<div class="s5-timer__value-num"></div>
-										<div class="s5-timer__value-text"></div>
-									</div>
-								</li>
-								<li>
-									<div class="s5-timer__value s5-timer__value_2">
-										<div class="s5-timer__value-bg">
-											{%include "./img/5/timer.svg"%}
-
-										</div>
-										<div class="s5-timer__value-num"></div>
-										<div class="s5-timer__value-text"></div>
-									</div>
-								</li>
-								<li>
-									<div class="s5-timer__value s5-timer__value_3">
-										<div class="s5-timer__value-bg">
-											{%include "./img/5/timer.svg"%}
-
-										</div>
-										<div class="s5-timer__value-num"></div>
-										<div class="s5-timer__value-text"></div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div>
-						<div class="s5__img ">
-							<div class="s5__clouds">
-								<!-- <img src="img/5/cl-1.png" alt=""> -->
-								<img class="parallax-layer" data-parallax-deep="-30" src="img/5/cl-2.png" alt="">
-								<img class="parallax-layer" data-parallax-deep="-50" src="img/5/cl-3.png" alt="">
-								<img class="parallax-layer" data-parallax-deep="-33" src="img/5/cl-4.png" alt="">
-								<img class="parallax-layer" data-parallax-deep="40" src="img/5/cl-5.png" alt="">
-								<img class="parallax-layer" data-parallax-deep="-40" src="img/5/cl-6.png" alt="">
-							</div>
-							<img class="parallax-layer" data-parallax-deep="-30" src="img/5/bed.png" alt="">
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="sblock s6 " id="how-to-take-part">
-			<div class="container">
-				<div class="s6__box">
-					<div>
-						<div class="s6__left">
-							<h3 class="stitle s6__title">Как участвовать?</h3>
-							<div class="stext s6__text">
-								<p>4 простых шага приблизят вас к территории здорового сна. Победители будут определены
+				<div class="sblock s6 " id="how-to-take-part">
+					<div class="container">
+						<div class="s6__box">
+							<div>
+								<div class="s6__left">
+									<h3 class="stitle s6__title">Как участвовать?</h3>
+									<div class="stext s6__text">
+										<p>4 простых шага приблизят вас к территории здорового сна. Победители будут определены
 									генератором случайных чисел / формулой случайной генерации. <br>Мы опубликуем
 									результаты
 									в аккаунте Instagram, доставим призовые комплекты в пределах Москвы и
 									Санкт-Петербурга,
 									а промокоды на сертификаты вышлем на номера / почты победителей!</p>
-							</div>
-							<a href="#" class="s6__conditions">Условия конкурса</a>
-						</div>
+									</div>
+									<a href="#" class="s6__conditions">Условия конкурса</a>
+								</div>
 
-						<ul class="s6__steps">
-							<li>
-								<div class="s6-step">
-									<span class="s6-step__num">
-										{% include "./img/5/timer.svg"%}
+								<ul class="s6__steps">
+									<li>
+										<div class="s6-step">
+											<span class="s6-step__num">
+												{% include "./img/5/timer.svg"%}
 										1
 									</span>
-									<p class="s6-step__text">Заполнить форму регистрации</p>
-								</div>
-							</li>
-							<li>
-								<div class="s6-step">
-									<span class="s6-step__num">
-										{% include "./img/5/timer.svg"%}
+											<p class="s6-step__text">Заполнить форму регистрации</p>
+										</div>
+									</li>
+									<li>
+										<div class="s6-step">
+											<span class="s6-step__num">
+												{% include "./img/5/timer.svg"%}
 
 										2
 									</span>
-									<p class="s6-step__text">Подписаться на <a href="#">аккаунт Askona</a> в Instagram
+											<p class="s6-step__text">Подписаться на <a href="#">аккаунт Askona</a> в Instagram
 									</p>
-								</div>
-							</li>
-							<li>
-								<div class="s6-step">
-									<span class="s6-step__num">
-										{% include "./img/5/timer.svg"%}
+										</div>
+									</li>
+									<li>
+										<div class="s6-step">
+											<span class="s6-step__num">
+												{% include "./img/5/timer.svg"%}
 
 										3
 									</span>
-									<p class="s6-step__text">Узнать итоги розыгрыша
+											<p class="s6-step__text">Узнать итоги розыгрыша
 										25 декабря</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<form class="sform s6-form">
+									<div class="sform__row">
+										<input type="text" placeholder="Имя*" required autocomplete="nope">
+									</div>
+									<div class="sform__row">
+										<input type="text" placeholder="Instagram nickname*" required autocomplete="nope">
+									</div>
+									<div class="sform__row">
+										<input type="email" placeholder="E-mail" autocomplete="nope">
+									</div>
+									<div class="sform__row">
+										<input type="tel" placeholder="Телефон*" required autocomplete="nope">
+									</div>
+									<div class="sform__row">
+										<label class="sform__cb">
+											<input type="checkbox" checked>
+											<span></span>
+											<span>Я принимаю <a href="#" target="_blank">условия обработки и защиты персональных
+											данных</a>
+											</span>
+										</label>
+									</div>
+									<div class="sform__row">
+										<button type="submit" class="sbtn sbtn_inv">Принять участие</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="s6__clouds " data-parallax-deep="40" data-parallax-disallow="x">
+						<div class="s6__clouds-items">
+
+							<img class="clouds_all" src="img/6/clouds_all.png" alt="">
+							<img class="clouds_all" src="img/6/clouds_all.png" alt="">
+							<img class="clouds_all_mob" src="img/6/clouds_all_mob.png" alt="">
+							<img class="clouds_all_mob" src="img/6/clouds_all_mob.png" alt="">
+
+						</div>
+					</div>
+				</div>
+
+				<div class="sblock s7" id="interaktiv">
+
+					<div class="container">
+						<div class="s7__box">
+							<div>
+								<div class="s7-video">
+									<div class="s7-video__inner">
+										<div class="s7-video__bg"></div>
+										<a href="#" class="s7-video__btn"></a>
+									</div>
 								</div>
+							</div>
+							<div>
+								<div class="s7__right">
+									<h3 class="stitle s7__title">Интерактивная выставка «Территория сна»</h3>
+									<ul class="s7__list">
+										<li>Место: Москва, Центр цифрового искусства Artplay
+									Нижняя Сыромятническая ул., д.10, стр. 2, вход 2А
+								</li>
+										<li>Дата: 19.12.2020 (сб)
+								</li>
+										<li>Время: 11:00 - 22:00</li>
+										<li>Вход свободный</li>
+									</ul>
+									<div class="stext s7__text">
+										<p>Невероятный мир сна станет реальностью всего на один день! С лучшими режиссерами
+									генеративной графики, композиторами жанра Lo-Fi и специалистами Askona мы создали
+									уникальную интерактивную экспозицию формата 360°, аналогов которой нет в России.</p>
+										<p>Живые декорации и специальное музыкальное сопровождение перенесут вас через все фазы
+									сна
+									в удивительное пространство, где мечты обретут форму и станут реальными.</p>
+									</div>
+									<a href="#popup-1" class="sbtn sbtn_white s7__btn popup-with-zoom-anim">Получить
+								приглашение</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="s7__clouds">
+						<div class="s7__clouds-items">
+							<img class="clouds_all" src="img/7/clouds_all.png" alt="">
+							<img class="clouds_all" src="img/7/clouds_all.png" alt="">
+							<img class="clouds_all" src="img/7/clouds_all.png" alt="">
+							<img class="clouds_all_mob" src="img/7/clouds_all_mob.png" alt="">
+							<img class="clouds_all_mob" src="img/7/clouds_all_mob.png" alt="">
+							<img class="clouds_all_mob" src="img/7/clouds_all_mob.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="sblock s8" id="health-map">
+					<div class="s8__clouds">
+						<img src="img/8/clouds-4.png" alt="">
+						<img src="img/8/mob/1.png" alt="">
+					</div>
+					<div class="container">
+						<div class="s8__box">
+							<div>
+								<div class="s8__left">
+									<h3 class="stitle s8__title">Карта здорового сна</h3>
+									<div class="stext s8__text">
+										<p>Ощутить все преимущества спальной системы Ergomotion вы можете рядом с домом.
+									Выберите
+									ближайший магазин Askona на карте вашего города.</p>
+									</div>
+									<a href="#" class="sbtn sbtn_white s8__btn">Купить комплект Ergomotion по акции от 59 900
+								₽</a>
+									<a href="#" class="sbtn sbtn_white s8__btn-mob">Купить Ergomotion от 59 900 ₽</a>
+								</div>
+							</div>
+							<div>
+								<div class="s8-map">
+									<div class="s8-map__top">
+										<div class="s8-map__select-wrapper hover">
+											<select class="s8-map__select" id="s8-select">
+												<option value="">Москва</option>
+												<option value="">Санкт-Петербург</option>
+												<option value="">Казань</option>
+												<option value="">Воронеж</option>
+											</select>
+											<label class="s8-map__select-arrow" for="s8-select">
+												{% include "img/arrow_bottom.svg" %}
+											</label>
+										</div>
+										<ul class="s8-map__links">
+											<li>
+												<a href="#">Показать на карте</a>
+											</li>
+											<li>
+												<a href="#">Показать списком</a>
+											</li>
+										</ul>
+									</div>
+									<div class="s8-map__main">
+										<div class="s8-map__main-inner"></div>
+										<ul class="s8-map__list">
+											<li>
+												<div class="s8-loc">
+													<div class="s8-loc__top">
+														<h4 class="s8-loc__title">ТЦ ЦДМ</h4>
+														<p class="s8-loc__type">Фирменный магазин</p>
+													</div>
+													<p class="s8-loc__text">Московская область, Ногинский р-он, п. Обухово,
+												Кудиновское ш. д.4.<br>тел: +7 (929) 693-78-32<br>пн-сб 10:00-22:00</p>
+												</div>
+											</li>
+											<li>
+												<div class="s8-loc">
+													<div class="s8-loc__top">
+														<h4 class="s8-loc__title">ТЦ ЦДМ</h4>
+														<p class="s8-loc__type">Фирменный магазин</p>
+													</div>
+													<p class="s8-loc__text">Московская область, Ногинский р-он, п. Обухово,
+												Кудиновское ш. д.4.<br>тел: +7 (929) 693-78-32<br>пн-сб 10:00-22:00</p>
+												</div>
+											</li>
+											<li>
+												<div class="s8-loc">
+													<div class="s8-loc__top">
+														<h4 class="s8-loc__title">ТЦ ЦДМ</h4>
+														<p class="s8-loc__type">Фирменный магазин</p>
+													</div>
+													<p class="s8-loc__text">Московская область, Ногинский р-он, п. Обухово,
+												Кудиновское ш. д.4.<br>тел: +7 (929) 693-78-32<br>пн-сб 10:00-22:00</p>
+												</div>
+											</li>
+											<li>
+												<div class="s8-loc">
+													<div class="s8-loc__top">
+														<h4 class="s8-loc__title">ТЦ ЦДМ</h4>
+														<p class="s8-loc__type">Фирменный магазин</p>
+													</div>
+													<p class="s8-loc__text">Московская область, Ногинский р-он, п. Обухово,
+												Кудиновское ш. д.4.<br>тел: +7 (929) 693-78-32<br>пн-сб 10:00-22:00</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<footer class="footer">
+					<div class="container">
+						<ul class="footer__list">
+							<li>
+								<a href="#">Ссылка на сайт</a>
+							</li>
+							<li>
+								<a href="#">Ссылка на продукт</a>
+							</li>
+							<li>
+								<a href="#">Часто задаваемые вопросы</a>
+							</li>
+							<li>
+								<a href="#">Условия розыгрыша</a>
 							</li>
 						</ul>
 					</div>
-					<div>
-						<form class="sform s6-form">
-							<div class="sform__row">
-								<input type="text" placeholder="Имя*" required autocomplete="nope">
-							</div>
-							<div class="sform__row">
-								<input type="text" placeholder="Instagram nickname*" required autocomplete="nope">
-							</div>
-							<div class="sform__row">
-								<input type="email" placeholder="E-mail" autocomplete="nope">
-							</div>
-							<div class="sform__row">
-								<input type="tel" placeholder="Телефон*" required autocomplete="nope">
-							</div>
-							<div class="sform__row">
-								<label class="sform__cb">
-									<input type="checkbox" checked>
-									<span></span>
-									<span>Я принимаю <a href="#" target="_blank">условия обработки и защиты персональных
-											данных</a>
-									</span>
-								</label>
-							</div>
-							<div class="sform__row">
-								<button type="submit" class="sbtn sbtn_inv">Принять участие</button>
-							</div>
-						</form>
-					</div>
-				</div>
+				</footer>
+
 			</div>
-			<div class="s6__clouds " data-parallax-deep="40" data-parallax-disallow="x">
-				<div class="s6__clouds-items">
-
-					<img class="clouds_all" src="img/6/clouds_all.png" alt="">
-					<img class="clouds_all" src="img/6/clouds_all.png" alt="">
-					<img class="clouds_all_mob" src="img/6/clouds_all_mob.png" alt="">
-					<img class="clouds_all_mob" src="img/6/clouds_all_mob.png" alt="">
-
+		</div>
+		<div class="popups">
+			<div id="popup-1" class="zoom-anim-dialog mfp-hide">
+				<form class="sform invite-form">
+					<p class="sform__heading">Заполните форму для приглашения</p>
+					<div class="sform__row">
+						<input type="text" placeholder="Имя*" required="" autocomplete="nope">
+					</div>
+					<div class="sform__row">
+						<input type="email" placeholder="E-mail" autocomplete="nope">
+					</div>
+					<div class="sform__row">
+						<input type="tel" placeholder="Телефон*" required="" autocomplete="nope">
+					</div>
+					<div class="sform__row">
+						<label class="sform__cb">
+							<input type="checkbox" checked="">
+							<span></span>
+							<span>Я принимаю <a href="#" target="_blank">условия обработки и защиты персональных данных</a>
+							</span>
+						</label>
+					</div>
+					<div class="sform__row">
+						<button type="submit" class="sbtn sbtn_inv">Отправить</button>
+					</div>
+					<!--				<a href="#" class="sform__close"></a>-->
+				</form>
+			</div>
+			<div id="popup-thank" class="zoom-anim-dialog mfp-hide">
+				<div class="popup-thank">
+					<div class="popup-thank__img"></div>
+					<p class="popup-thank__text-1">Спасибо!</p>
+					<p class="popup-thank__text-2">Приглашение на интерактивную выставку «Территория сна» отправлено</p>
 				</div>
 			</div>
 		</div>
+		<div id="cursor-follow"></div>
 
-		<div class="sblock s7" id="interaktiv">
+		{% include "template/footer.html" %}
 
-			<div class="container">
-				<div class="s7__box">
-					<div>
-						<div class="s7-video">
-							<div class="s7-video__inner">
-								<div class="s7-video__bg"></div>
-								<a href="#" class="s7-video__btn"></a>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="s7__right">
-							<h3 class="stitle s7__title">Интерактивная выставка «Территория сна»</h3>
-							<ul class="s7__list">
-								<li>Место: Москва, Центр цифрового искусства Artplay
-									Нижняя Сыромятническая ул., д.10, стр. 2, вход 2А
-								</li>
-								<li>Дата: 19.12.2020 (сб)
-								</li>
-								<li>Время: 11:00 - 22:00</li>
-								<li>Вход свободный</li>
-							</ul>
-							<div class="stext s7__text">
-								<p>Невероятный мир сна станет реальностью всего на один день! С лучшими режиссерами
-									генеративной графики, композиторами жанра Lo-Fi и специалистами Askona мы создали
-									уникальную интерактивную экспозицию формата 360°, аналогов которой нет в России.</p>
-								<p>Живые декорации и специальное музыкальное сопровождение перенесут вас через все фазы
-									сна
-									в удивительное пространство, где мечты обретут форму и станут реальными.</p>
-							</div>
-							<a href="#popup-1" class="sbtn sbtn_white s7__btn popup-with-zoom-anim">Получить
-								приглашение</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="s7__clouds">
-				<div class="s7__clouds-items">
-					<img class="clouds_all" src="img/7/clouds_all.png" alt="">
-					<img class="clouds_all" src="img/7/clouds_all.png" alt="">
-					<img class="clouds_all" src="img/7/clouds_all.png" alt="">
-					<img class="clouds_all_mob" src="img/7/clouds_all_mob.png" alt="">
-					<img class="clouds_all_mob" src="img/7/clouds_all_mob.png" alt="">
-					<img class="clouds_all_mob" src="img/7/clouds_all_mob.png" alt="">
-				</div>
-			</div>
-		</div>
-
-		<div class="sblock s8" id="health-map">
-			<div class="s8__clouds">
-				<img src="img/8/clouds-4.png" alt="">
-				<img src="img/8/mob/1.png" alt="">
-			</div>
-			<div class="container">
-				<div class="s8__box">
-					<div>
-						<div class="s8__left">
-							<h3 class="stitle s8__title">Карта здорового сна</h3>
-							<div class="stext s8__text">
-								<p>Ощутить все преимущества спальной системы Ergomotion вы можете рядом с домом.
-									Выберите
-									ближайший магазин Askona на карте вашего города.</p>
-							</div>
-							<a href="#" class="sbtn sbtn_white s8__btn">Купить комплект Ergomotion по акции от 59 900
-								₽</a>
-							<a href="#" class="sbtn sbtn_white s8__btn-mob">Купить Ergomotion от 59 900 ₽</a>
-						</div>
-					</div>
-					<div>
-						<div class="s8-map">
-							<div class="s8-map__top">
-								<div class="s8-map__select-wrapper hover">
-									<select class="s8-map__select" id="s8-select">
-										<option value="">Москва</option>
-										<option value="">Санкт-Петербург</option>
-										<option value="">Казань</option>
-										<option value="">Воронеж</option>
-									</select>
-									<label class="s8-map__select-arrow" for="s8-select">
-										{% include "img/arrow_bottom.svg" %}
-									</label>
-								</div>
-								<ul class="s8-map__links">
-									<li>
-										<a href="#">Показать на карте</a>
-									</li>
-									<li>
-										<a href="#">Показать списком</a>
-									</li>
-								</ul>
-							</div>
-							<div class="s8-map__main">
-								<div class="s8-map__main-inner"></div>
-								<ul class="s8-map__list">
-									<li>
-										<div class="s8-loc">
-											<div class="s8-loc__top">
-												<h4 class="s8-loc__title">ТЦ ЦДМ</h4>
-												<p class="s8-loc__type">Фирменный магазин</p>
-											</div>
-											<p class="s8-loc__text">Московская область, Ногинский р-он, п. Обухово,
-												Кудиновское ш. д.4.<br>тел: +7 (929) 693-78-32<br>пн-сб 10:00-22:00</p>
-										</div>
-									</li>
-									<li>
-										<div class="s8-loc">
-											<div class="s8-loc__top">
-												<h4 class="s8-loc__title">ТЦ ЦДМ</h4>
-												<p class="s8-loc__type">Фирменный магазин</p>
-											</div>
-											<p class="s8-loc__text">Московская область, Ногинский р-он, п. Обухово,
-												Кудиновское ш. д.4.<br>тел: +7 (929) 693-78-32<br>пн-сб 10:00-22:00</p>
-										</div>
-									</li>
-									<li>
-										<div class="s8-loc">
-											<div class="s8-loc__top">
-												<h4 class="s8-loc__title">ТЦ ЦДМ</h4>
-												<p class="s8-loc__type">Фирменный магазин</p>
-											</div>
-											<p class="s8-loc__text">Московская область, Ногинский р-он, п. Обухово,
-												Кудиновское ш. д.4.<br>тел: +7 (929) 693-78-32<br>пн-сб 10:00-22:00</p>
-										</div>
-									</li>
-									<li>
-										<div class="s8-loc">
-											<div class="s8-loc__top">
-												<h4 class="s8-loc__title">ТЦ ЦДМ</h4>
-												<p class="s8-loc__type">Фирменный магазин</p>
-											</div>
-											<p class="s8-loc__text">Московская область, Ногинский р-он, п. Обухово,
-												Кудиновское ш. д.4.<br>тел: +7 (929) 693-78-32<br>пн-сб 10:00-22:00</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<footer class="footer">
-			<div class="container">
-				<ul class="footer__list">
-					<li>
-						<a href="#">Ссылка на сайт</a>
-					</li>
-					<li>
-						<a href="#">Ссылка на продукт</a>
-					</li>
-					<li>
-						<a href="#">Часто задаваемые вопросы</a>
-					</li>
-					<li>
-						<a href="#">Условия розыгрыша</a>
-					</li>
-				</ul>
-			</div>
-		</footer>
-	</div>
-
-	<div class="popups">
-		<div id="popup-1" class="zoom-anim-dialog mfp-hide">
-			<form class="sform invite-form">
-				<p class="sform__heading">Заполните форму для приглашения</p>
-				<div class="sform__row">
-					<input type="text" placeholder="Имя*" required="" autocomplete="nope">
-				</div>
-				<div class="sform__row">
-					<input type="email" placeholder="E-mail" autocomplete="nope">
-				</div>
-				<div class="sform__row">
-					<input type="tel" placeholder="Телефон*" required="" autocomplete="nope">
-				</div>
-				<div class="sform__row">
-					<label class="sform__cb">
-						<input type="checkbox" checked="">
-						<span></span>
-						<span>Я принимаю <a href="#" target="_blank">условия обработки и защиты персональных данных</a>
-						</span>
-					</label>
-				</div>
-				<div class="sform__row">
-					<button type="submit" class="sbtn sbtn_inv">Отправить</button>
-				</div>
-				<!--				<a href="#" class="sform__close"></a>-->
-			</form>
-		</div>
-		<div id="popup-thank" class="zoom-anim-dialog mfp-hide">
-			<div class="popup-thank">
-				<div class="popup-thank__img"></div>
-				<p class="popup-thank__text-1">Спасибо!</p>
-				<p class="popup-thank__text-2">Приглашение на интерактивную выставку «Территория сна» отправлено</p>
-			</div>
-		</div>
-	</div>
-	<div id="cursor-follow"></div>
-
-	{% include "template/footer.html" %}
-
-</body>
+	</body>
 
 </html>

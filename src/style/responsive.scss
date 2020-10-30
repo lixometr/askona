@@ -53,8 +53,8 @@
 	}
 
 	.s3 {
-		height: 600px;
-		min-height: 600px;
+		height: 800px;
+		// min-height: 800px;
 	}
 }
 
@@ -355,7 +355,8 @@
 	}
 
 	.header__box {
-		padding: 7px 0 0;
+		padding: 7px 0 7px;
+		background: rgba(#03203B, .5);
 	}
 
 	.header__logo {

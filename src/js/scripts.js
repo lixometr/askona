@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger.min.js"
 import Preloader from "./preloader"
 import $ from "jquery"
+require('./ismac')
 global.$ = $
 gsap.registerPlugin(ScrollTrigger)
 ScrollTrigger.defaults({
@@ -32,6 +33,7 @@ $(window).on('load', () => {
     require('./scrollTo')
     require('./sticks')
     require('./scrollArrow')
+    require('./smoothScroll')
 })
 
 let prevScroll = $(window).scrollTop()

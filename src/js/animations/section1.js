@@ -42,7 +42,35 @@ gsap.to('.s1__image', {
 })
 
 
-gsap.fromTo('.header__box, .s1__box', {
+// gsap.fromTo('.header__box, .s1__box', {
+//     opacity: 0,
+//     y: -100
+// }, {
+//     y: 0,
+//     opacity: 1,
+//     autoAlpha: 1,
+//     duration: .9
+// })
+
+gsap.fromTo(' .s1__title', {
+    opacity: 0,
+    x: -100
+}, {
+    x: 0,
+    opacity: 1,
+    autoAlpha: 1,
+    duration: .9
+})
+gsap.fromTo(' .s1__subtitle, .s1__btn', {
+    opacity: 0,
+    y: 100
+}, {
+    y: 0,
+    opacity: 1,
+    autoAlpha: 1,
+    duration: .9
+})
+gsap.fromTo('.header__box', {
     opacity: 0,
     y: -100
 }, {
