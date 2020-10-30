@@ -2,6 +2,7 @@
 @import "fonts";
 @import "./custom.scss";
 @import "./menu.scss";
+@import "../../node_modules/selectric/src/selectric.scss";
 $f1: "Circe";
 
 //////////////////////////////////////////////
@@ -154,13 +155,13 @@ body {
 	color: #FFFFFF;
 	overflow-x: hidden;
 
+	background: linear-gradient(180deg, #031F39 0%, #001B39 6.06%, #011F3F 13.99%, #032C4D 19.4%, #043F6B 34.38%, #033257 49.35%, #413879 63.66%, #6D4F79 87.26%, #FFDDC2 100%);
 
 }
 
 .wrapper-all {
 	// height: 100vh;
 	// overflow: auto;
-	background: linear-gradient(180deg, #031F39 0%, #001B39 6.06%, #011F3F 13.99%, #032C4D 19.4%, #043F6B 34.38%, #033257 49.35%, #413879 63.66%, #6D4F79 87.26%, #FFDDC2 100%);
 
 }
 
@@ -274,8 +275,8 @@ body {
 	position: fixed;
 	left: 0;
 	top: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	z-index: -1;
 }
 
@@ -285,7 +286,8 @@ body {
 	top: 0;
 	width: 100%;
 	z-index: 300;
-	> .container {
+
+	>.container {
 		z-index: 400;
 		position: relative;
 	}
@@ -421,6 +423,7 @@ body {
 	text-align: right;
 	background: rgba(0, 0, 0, 0.4);
 	z-index: 200;
+
 	.socials {
 		display: none;
 		flex-wrap: wrap;
@@ -468,8 +471,9 @@ body {
 	// background: linear-gradient(269.86deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
 	background-image: linear-gradient(269.86deg, rgba(255, 255, 255, 0.1) 0.11%, rgba(255, 255, 255, 0) 85%);
 	background-position: 300px 0;
-	background-repeat:  no-repeat;
+	background-repeat: no-repeat;
 	transition: .3s;
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -486,6 +490,7 @@ body {
 	&:hover {
 		// background: linear-gradient(269.86deg, rgba(255, 255, 255, 0.1) 0.11%, rgba(255, 255, 255, 0) 99.87%);
 		background-position: 0 0;
+
 		&:before {
 			background: #FFFFFF;
 			box-shadow: 0px 0px 4px #FFFFFF;
@@ -537,6 +542,7 @@ body {
 	svg {
 		width: 18px;
 		transition: .1s;
+
 		@media screen and (max-width: 576px) {
 			width: 13px;
 		}
@@ -554,6 +560,7 @@ body {
 	&:active {
 		box-shadow: 0px 0px 4px #FFFFFF;
 	}
+
 	&.top {
 		svg {
 			transform: rotate(180deg);
@@ -705,15 +712,19 @@ body {
 		}
 	}
 }
+
 .s2-organ[data-index="1"] {
 	left: 0;
 }
+
 .s2-organ[data-index="2"] {
 	left: 25%;
 }
+
 .s2-organ[data-index="3"] {
 	left: 50%;
 }
+
 .s2-organ[data-index="4"] {
 	left: 75%;
 }
@@ -863,7 +874,8 @@ body {
 
 .s2__item {
 	display: none;
-	 height: 410px;
+	height: 410px;
+
 	&.active {
 		display: block;
 	}
@@ -1996,33 +2008,36 @@ body {
 }
 
 .s8-map__select {
-	position: relative;
-	display: block;
-	padding: 0 40px 0 15px;
-	height: 48px;
-	width: 100%;
-	border-radius: 6px;
-	border: 1px solid rgba(255, 255, 255, 0.4);
-	outline: 0;
-	font: 16px/1.5 $f1;
-	color: #FFFFFF;
-	background: rgba(255, 255, 255, 0.1);
-	box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
-	appearance: none;
-	-webkit-appearance: none;
 
-	option {
-		color: #000;
+	.selectric {
+		position: relative;
+		display: block;
+		padding: 0 40px 0 15px;
+		height: 48px;
+		width: 100%;
+		border-radius: 6px;
+		border: 1px solid rgba(255, 255, 255, 0.4);
+		outline: 0;
+		font: 16px/1.5 $f1;
+		color: #FFFFFF;
+		background: rgba(255, 255, 255, 0.1);
+		box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+		appearance: none;
+		-webkit-appearance: none;
+
 	}
 }
+
 .s8-map__select-wrapper {
 	width: 44.16%;
 	position: relative;
+
 	label {
 		margin-bottom: 0;
 		height: 20px;
 	}
 }
+
 .s8-map__select-arrow {
 	position: absolute;
 	top: 50%;
@@ -2031,6 +2046,7 @@ body {
 	transform: translateY(-50%);
 
 }
+
 .s8-map__links {
 	display: flex;
 	flex-wrap: wrap;

@@ -68,6 +68,7 @@
     "lodash.throttle": "^4.1.1",
     "magnific-popup": "^1.1.0",
     "scrollmagic": "^2.0.7",
+    "selectric": "^1.13.0",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1"
   }

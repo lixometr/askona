@@ -174,20 +174,13 @@ body {
 }
 
 .wrapper-all {
-    position: relative;
+    // position: relative;
     overflow-x: hidden;
-    z-index: 1;
-    transition: .5s;
-
+    // z-index: 1;
+    // transition: .1s;
 }
 
-.temp-wrapper-all {
-    height: 100vh;
-    overflow: auto;
-    transform: scale(1);
 
-    transition: .3s;
-}
 
 .nav-open .temp-wrapper-all {
     //   overflow: hidden;
