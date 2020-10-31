@@ -135,6 +135,7 @@ class Slider {
         })
         const swiperOpts = {
             swipe: (event, direction, distance, duration,) => {
+                console.log('swipe')
                 if (direction === 'left') {
                     this.slideNext()
                 } else if (direction === 'right') {
