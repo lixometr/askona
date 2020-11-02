@@ -65,12 +65,12 @@ const srcPath = (file, watch = false) => {
   );
 };
 const distPath = (file, serve = false) => {
-  if (["css", "js", "img", "fonts"].includes(file)) return `./dist/${file}`;
-  if (file === "html" && serve === false) return "./dist/**/*.html";
-  if (file === "html" && serve === true) return "./dist";
-  if (file === "nj" && serve === false) return "./dist/*.html";
-  if (file === "nj" && serve === true) return "./dist";
-  if (file === "php" ) return "./dist/**/*.php";
+  if (["css", "js", "img", "fonts"].includes(file)) return `F:/OSPanel/domains/askona.loc/${file}`;
+  if (file === "html" && serve === false) return "F:/OSPanel/domains/askona.loc/**/*.html";
+  if (file === "html" && serve === true) return "F:/OSPanel/domains/askona.loc";
+  if (file === "nj" && serve === false) return "F:/OSPanel/domains/askona.loc/*.html";
+  if (file === "nj" && serve === true) return "F:/OSPanel/domains/askona.loc/";
+  if (file === "php" ) return "F:/OSPanel/domains/askona.loc/";
   console.error(
     "Unsupported file type entered into Gulp Task Runner for Dist Path"
   );
@@ -186,19 +186,19 @@ const buildImages = mode => done => {
       )
     : undefined;
 };
-// const buildPhp = mode => done => {
-//   done();
-//   ["development", "production"].includes(mode)
-//     ? pump(
-//         [
-//           gulp.src(srcPath("php")),
+const buildPhp = mode => done => {
+  done();
+  ["development", "production"].includes(mode)
+    ? pump(
+        [
+          gulp.src(srcPath("php")),
   
-//           gulp.dest(distPath("php")),
-//         ],
-//         done
-//       )
-//     : undefined;
-// };
+          gulp.dest(distPath("php")),
+        ],
+        done
+      )
+    : undefined;
+};
 const buildFonts = mode => done => {
   done();
   ["development", "production"].includes(mode)
@@ -314,6 +314,9 @@ const genericTask = (mode, context = "building") => {
     Object.assign(buildMarkup(mode), {
       displayName: `Booting Markup Task: Build - ${modeName}`
     }),
+    Object.assign(buildPhp(mode), {
+      displayName: `Booting PHP Task: Build - ${modeName}`
+    }),
     // Object.assign(cleanImages(mode), {
     //   displayName: `Booting Images Task: Clean - ${modeName}`
     // }),
@@ -366,6 +369,9 @@ const genericTask = (mode, context = "building") => {
         Object.assign(buildMarkup(mode), {
           displayName: `Watching Markup Task: Build - ${modeName}`
         }),
+        Object.assign(buildPhp(mode), {
+          displayName: `Booting PHP Task: Build - ${modeName}`
+        }),
         browserSync.reload
       )
     );
@@ -375,15 +381,15 @@ const genericTask = (mode, context = "building") => {
     gulp.watch(srcPath("img", true)).on(
       "all",
       gulp.series(
-        Object.assign(cleanImages(mode), {
-          displayName: `Watching Images Task: Clean - ${modeName}`
-        }),
+        // Object.assign(cleanImages(mode), {
+        //   displayName: `Watching Images Task: Clean - ${modeName}`
+        // }),
         Object.assign(preBuildMarkup(mode), {
           displayName: `Watching Markup Task: Build - ${modeName}`
         }),
-        Object.assign(buildImages(mode), {
-          displayName: `Watching Images Task: Build - ${modeName}`
-        }),
+        // Object.assign(buildImages(mode), {
+        //   displayName: `Watching Images Task: Build - ${modeName}`
+        // }),
         browserSync.reload
       )
     );
@@ -411,6 +417,15 @@ const genericTask = (mode, context = "building") => {
         }),
         Object.assign(buildScripts(mode), {
           displayName: `Watching Scripts Task: Build - ${modeName}`
+        }),
+        browserSync.reload
+      )
+    );
+    gulp.watch(srcPath("php", true)).on(
+      "all",
+      gulp.series(
+        Object.assign(buildPhp(mode), {
+          displayName: `Watching PHP Task: Build - ${modeName}`
         }),
         browserSync.reload
       )

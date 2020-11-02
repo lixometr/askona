@@ -9,7 +9,7 @@ class Star {
             maxRadius: 1.4,
             minSpeed: .1,
             maxSpeed: .5,
-            speed: 1
+            speed: 2
         }
         this.minRadius = this.defaults.minRadius
         this.maxRadius = this.defaults.maxRadius;
@@ -76,8 +76,13 @@ class Stars {
         })
 
     }
+    destroy() {
+        this.isDestroyed = true
+    }
     //Initalize
     init() {
+        this.isDestroyed = false
+
         this.setCanvasSize()
 
         this.createCircle();
@@ -115,10 +120,10 @@ class Stars {
             ctx = self.ctx;
         ctx.fillStyle = this.stars[i].color;
 
-       
+
         // ctx.font = '28pt Calibri';
         // ctx.fillStyle = 'white';
-       
+
         ctx.beginPath();
         // ctx.lineWidth = 5;
         // ctx.shadowColor = 'white';
@@ -128,34 +133,39 @@ class Stars {
         // ctx.shadowOffsetY = 0;
         ctx.arc(this.stars[i].xPos, this.stars[i].yPos, this.stars[i].radius, 0, 2 * Math.PI, false);
         // ctx.stroke();
-        ctx.fill();
     }
 
 
     render() {
         requestAnimationFrame(() => {
-            //clears canvas
-            this.clearCanvas();
-            //redraws stars
-            for (var i = 0; i < this.numStars; i++) {
-                if (this.direction === 'horizontal') {
-                    this.stars[i].xPos -= this.stars[i].getVelocity().x;
+            requestAnimationFrame(() => {
+                if (this.isDestroyed) return
+                //clears canvas
+                this.clearCanvas();
+                //redraws stars
+                for (var i = 0; i < this.numStars; i++) {
+                    if (this.direction === 'horizontal') {
+                        this.stars[i].xPos -= this.stars[i].getVelocity().x;
 
-                } else {
-                    this.stars[i].yPos -= this.stars[i].getVelocity().y;
+                    } else {
+                        this.stars[i].yPos -= this.stars[i].getVelocity().y;
+                    }
+                    //if star goes off screen from the left call reset method
+                    if (this.stars[i].xPos < 0 || this.stars[i].xPos > this.canvas.width) {
+                        this.resetStar(i);
+                    }
+                    else if (this.stars[i].yPos < 0 || this.stars[i].yPos > this.canvas.height) {
+                        this.resetStar(i);
+                    }
+                    else {
+                        this.draw(i);
+                        console.log('draw')
+                        this.ctx.fill();
+
+                    }
                 }
-                //if star goes off screen from the left call reset method
-                if (this.stars[i].xPos < 0 || this.stars[i].xPos > this.canvas.width) {
-                    this.resetStar(i);
-                }
-                else if (this.stars[i].yPos < 0 || this.stars[i].yPos > this.canvas.height) {
-                    this.resetStar(i);
-                }
-                else {
-                    this.draw(i);
-                }
-            }
-            this.render()
+                this.render()
+            })
         })
     }
 
@@ -180,6 +190,7 @@ class Stars {
         }
 
         self.draw(i);
+
     }
 
     clearCanvas() {

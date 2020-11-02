@@ -1,4 +1,5 @@
 const throttle = require("lodash.throttle")
+const { default: stars } = require("../stars")
 
 /**
  * autoAlfa: 0
@@ -12,12 +13,12 @@ function scrollParallax() {
             start: "top top-=200px",
             duration: 1,
             toggleActions: "play none none reverse",
-    
-    
+
+
             // end: "+=400",
             scrub: false, // fix can be in seconds (smooth delay)
             // once: true
-    
+
         },
         y: -250
     })
@@ -28,11 +29,11 @@ function scrollParallax() {
             start: "top top-=200px",
             duration: .9,
             toggleActions: "play none none reverse",
-    
+
             // end: "+=400",
             scrub: false, // fix can be in seconds (smooth delay)
             // once: true
-    
+
         },
         y: -100
     })
@@ -42,18 +43,18 @@ function scrollParallax() {
             pin: false,
             start: "top top=-200px",
             toggleActions: "play none none reverse",
-    
+
             // end: "+=200",
             duration: .9,
             scrub: false, // fix can be in seconds (smooth delay)
             // once: true
-    
+
         },
         y: 40
     })
 }
 
-if($(window).width() > 991) {
+if ($(window).width() > 991) {
     scrollParallax()
 }
 
@@ -95,7 +96,7 @@ gsap.fromTo('.header__box', {
     autoAlpha: 1,
     duration: .9,
     delay: .5
-    
+
 })
 gsap.fromTo('.galaxy', {
     opacity: 0,
@@ -137,8 +138,15 @@ function checkGalaxy() {
     const nowScrollTop = $(window).scrollTop()
     if (nowScrollTop >= ofTop) {
         $('#stars').hide()
+        if(!Stars.isDestroyed) {
+            Stars.destroy()
+
+        }
     } else {
         $('#stars').show()
+        if (Stars.isDestroyed) {
+            Stars.init()
+        }
 
     }
 

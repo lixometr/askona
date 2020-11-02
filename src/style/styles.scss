@@ -6,6 +6,7 @@
 $f1: "Circe";
 
 //////////////////////////////////////////////
+
 svg {
 	max-width: 100%;
 }
@@ -427,7 +428,7 @@ body {
 	text-align: right;
 	background: rgba(0, 0, 0, 0.4);
 	z-index: 200;
-
+	backdrop-filter: blur(10px);
 	.socials {
 		display: none;
 		flex-wrap: wrap;
@@ -879,7 +880,7 @@ body {
 
 .s2__item {
 	display: none;
-	// height: 450px;
+	height: 460px;
 
 	&.active {
 		display: block;
@@ -1034,8 +1035,9 @@ body {
 .s4__clouds {
 	overflow: hidden;
 	width: 100%;
-	z-index: 10;
+	z-index: -1;
 	position: relative;
+	margin-top: -100px;
 }
 
 .s4__clouds-items {
@@ -1075,13 +1077,13 @@ body {
 
 .s4__items {
 	margin: 0 -10px;
-	padding: 0 0 50px;
+	padding: 0 0 30px;
 }
 
 .s4__item {
 	padding: 0 10px 20px;
 	display: none;
-
+	height: 420px;
 	&.active {
 		display: block;
 	}
@@ -1117,8 +1119,8 @@ body {
 
 .s5 {
 	// height: 1172px;
-	margin-top: -200px;
-	padding-top: 100px;
+	margin-top: -15%;
+	padding-top: 0;
 }
 
 .s5__box {
@@ -1228,14 +1230,21 @@ body {
 	.s5-timer__value-text {
 		font-size: 18px;
 	}
+	
 }
 
 .s5-timer__value_2 {
 	//	background: url("../img/5/2.svg") no-repeat center center;
+	.s5-timer__value-bg {
+		transform: rotate(90deg);
+	}
 }
 
 .s5-timer__value_3 {
 	//	background: url("../img/5/3.svg") no-repeat center center;
+	.s5-timer__value-bg {
+		transform: rotate(180deg);
+	}
 }
 
 .s5-timer__value-num {
@@ -1368,10 +1377,10 @@ body {
 	img {
 		position: absolute;
 		left: 50%;
-		top: 0;
+		top: -20%;
 		transform: translate(-50%);
 		max-width: none;
-		max-height: 2300px;
+		max-height: 2100px;
 		width: 120%;
 	}
 }
@@ -1385,7 +1394,7 @@ body {
 .s6 {
 	// height: 1006px;
 	display: block;
-	padding-top: 350px;
+	padding-top: 120px;
 	// background-size: 100% 100%;
 	position: relative;
 
@@ -1541,7 +1550,7 @@ body {
 	height: 62px;
 	font: 24px/1.5 $f1;
 
-	svg {
+	img {
 		position: absolute;
 		left: 50%;
 		top: 50%;
@@ -1573,11 +1582,34 @@ body {
 	margin: 0 auto;
 	padding: 59px 53px;
 	max-width: 408px;
+	height: 450px;
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 10px;
 	background: rgba(255, 255, 255, 0.05);
 	backdrop-filter: blur(15px);
+	display: flex;
+	align-items: center;
+	form {
+		width: 100%;
+	}
+	.form-thank {
+		display: none;
+	}
+	.loading {
+		.sbtn {
+			opacity: 0.4;
+		}
+	}
+	&.submited {
+		padding: 59px 10px;
 
+		form {
+			display: none;
+		}
+		.form-thank {
+			display: block;
+		}
+	}
 	input:not([type="checkbox"]) {
 		display: block;
 		padding: 0 12px;
@@ -1602,6 +1634,10 @@ body {
 			@include placeholder {
 				color: rgba(255, 255, 255, 0.3) !important;
 			}
+		}
+		&.error {
+			border: 1px solid rgba(235, 21, 21, 0.589);
+
 		}
 	}
 	input {
@@ -1729,24 +1765,24 @@ body {
 	padding-top: 0;
 	margin-top: -2px;
 	// padding-bottom: 0px;
-	background: url(../img/7/bg.jpg) center center no-repeat;
+	margin-top: -100px;
+	background: url(../img/7/bg.jpg) 0 000px no-repeat;
 	background-size: 100% 100%;
 
 	.container {
 		position: relative;
+		z-index: 3;
 	}
 }
 
-.s7__clouds {
-	position: relative;
-	z-index: 10;
-}
 
 .s7__clouds {
 	overflow: hidden;
 	width: 100%;
 	position: relative;
-	z-index: 10;
+	z-index: 1;
+	margin-top: -150px;
+
 }
 
 .s7__clouds-items {
@@ -1923,9 +1959,10 @@ body {
 	overflow: hidden;
 	position: relative;
 	padding: 0 0 190px;
-	background: url(../img//8/bg.jpg) center center no-repeat;
+	margin-top: -200px;
+	background: url(../img/8/bg.jpg) 0 200px no-repeat;
 	background-size: 100% 100%;
-
+	z-index: 10;
 	.container {
 		position: relative;
 	}
@@ -2002,6 +2039,40 @@ body {
 .s8-map {
 	margin: 0 auto;
 	max-width: 680px;
+	&.moscow {
+		.s8-map-moscow {
+			display: block;
+		}
+		.s8-map__list-moscow {
+			display: block;
+		}
+	}
+	&.moscow.map {
+		.s8-map-moscow {
+			display: block;
+		}
+		.s8-map__list-moscow {
+			display: block;
+		}
+	}
+	&.peter {
+		.s8-map-peter {
+			display: block;
+		}
+		.s8-map__list-peter {
+			display: block;
+		}
+	}
+	&.list {
+		.s8-map__list {
+			display: block;
+		}
+	}
+	&.map {
+		.s8-map__inner {
+			display: block;
+		}
+	}
 }
 
 .s8-map__top {
@@ -2067,7 +2138,8 @@ body {
 }
 
 .s8-map__select-wrapper {
-	width: 44.16%;
+	width: 48%;
+	margin-right: 2%;
 	position: relative;
 
 	label {
@@ -2083,13 +2155,16 @@ body {
 	right: 14px;
 	transform: translateY(-50%);
 }
-
+.s8-map__inner {
+	display: none;
+	height: 100%;
+}
 .s8-map__links {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-	width: 46%;
+	width: 50%;
 
 	li {
 	}
@@ -2126,6 +2201,7 @@ body {
 .s8-map__main {
 	position: relative;
 	padding: 20px;
+	height: 500px;
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	border-radius: 10px;
 	box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.45);
@@ -2133,11 +2209,13 @@ body {
 
 .s8-map__main-inner {
 	position: relative;
-	padding: 68.5% 0 0;
+	// padding: 68.5% 0 0;
+	height: 100%;
 	border-radius: 10px;
 	background: url("../img/8/map.jpg") no-repeat center center;
 	background-size: cover;
 	overflow: hidden;
+	display: none;
 }
 
 .s8-map__list {
@@ -2150,7 +2228,7 @@ body {
 	padding: 37px 50px;
 	overflow: auto;
 
-	& > * {
+	 li {
 		margin-bottom: 8px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
@@ -2174,6 +2252,9 @@ body {
 		background: #ffffff;
 		box-shadow: 0px 0px 4px #ffffff;
 	}
+}
+.s8-map__list-item {
+	display: none;
 }
 
 .s8-map__main_list {
@@ -2262,14 +2343,24 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: 700;
-	.invite-form {
+	.sform {
 		position: absolute;
 		max-width: 400px;
 		width: 100%;
+		height: 520px;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 10;
+		display: block;
+		padding: 50px 0;
+		padding-bottom: 0;
+	}
+	.popup-form-wrapper {
+		width: 100%;
+		overflow: auto;
+		height: 100%;
+
 	}
 	.popup-overlay {
 		background: rgba(0, 0, 0, 0.3);
@@ -2293,30 +2384,20 @@ body {
 #popup-thank {
 	margin: 0 auto;
 	max-width: 408px;
-
-	.mfp-close {
-		display: none;
-	}
 }
 
-.popup-thank {
+.form-thank {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	align-content: center;
 	margin: 0 auto;
 	padding: 0 10px;
-	max-width: 428px;
-	height: 404px;
 	font: 20px/1.5 $f1;
 	text-align: center;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 10px;
-	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(15px);
 }
 
-.popup-thank__img {
+.form-thank__img {
 	margin: 0 auto 12px;
 	width: 85px;
 	height: 85px;
@@ -2326,12 +2407,12 @@ body {
 	box-shadow: 0px 0px 4px #ffffff;
 }
 
-.popup-thank__text-1 {
+.form-thank__text-1 {
 	width: 100%;
 	margin: 0 auto 20px;
 }
 
-.popup-thank__text-2 {
+.form-thank__text-2 {
 	width: 100%;
 	margin: 0 auto 0;
 }

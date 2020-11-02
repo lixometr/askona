@@ -125,7 +125,9 @@
 	.s4__box > *:nth-child(2) {
 		width: 100%;
 	}
-
+	.s4__item {
+		height: auto;
+	}
 	.s4__img {
 		margin: 0 auto;
 	}
@@ -140,6 +142,9 @@
 
 	.stext {
 		font-size: 15px;
+	}
+	.s5 {
+		margin-top: -150px;
 	}
 
 	.s5__box > *:nth-child(1) {
@@ -273,7 +278,9 @@
 		height: auto;
 	}
 	.s2-body__images {
+		margin: 0 auto;
 		margin-bottom: 25px;
+		max-width: 90%;
 	}
 
 	.slider-arrows {
@@ -313,6 +320,17 @@
 	.footer__list li {
 		margin: 0 1em;
 	}
+	.s4__img:nth-child(1) {
+		width: 90%;
+	}
+	
+.s5__clouds-bg {
+
+	img {
+		top: 0%;
+	}
+}
+	
 }
 
 @media (max-width: 767px) {
@@ -327,7 +345,9 @@
 	.stext {
 		font-size: 13px;
 	}
-
+	.s5 {
+		margin-top: -100px;
+	}
 	.s6 {
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -347,10 +367,33 @@
 	.s5-timer__values {
 		// justify-content: center;
 	}
+	.s8-map__select-wrapper {
+		width: 100%;
+		margin: 19px;
+	}
 
 	.s8-map__links {
-		width: 54%;
+		justify-content: center;
+		width: 100%;
 	}
+
+	.s8-map__links a {
+		padding: 5px 10px;
+		font-size: 10px;
+	}
+
+	.s8-map__links li:nth-child(1) {
+		margin: 0 15px 0 0;
+	}
+
+	.s8__box > *:nth-child(1) {
+		margin: 0 0 30px;
+	}
+
+	.s8-map__top {
+		margin: 0 0 31px 0;
+	}
+	
 }
 
 @media (max-width: 575px) {
@@ -592,7 +635,7 @@
 	.s4__title {
 		position: absolute;
 		left: 0;
-		top: 0;
+		top: -10px;
 		width: 100%;
 	}
 
@@ -641,7 +684,10 @@
 	.s4__items {
 		padding: 0;
 	}
-
+	
+	.s4__item {
+		height: auto;
+	}
 	.s4__items .slick-arrow {
 		bottom: 156px;
 	}
@@ -662,6 +708,7 @@
 			transform: translateX(-200%);
 		}
 	}
+	
 	.s5__img {
 		display: none;
 	}
@@ -684,7 +731,7 @@
 	}
 
 	.s5 {
-		margin-top: 0;
+		margin-top: -140px;
 		padding: 30px 0;
 		height: auto;
 	}
@@ -811,6 +858,7 @@
 
 		max-width: none;
 		width: 100%;
+		height: 340px;
 		margin: 0;
 		padding: 40px 30px;
 	}
@@ -838,10 +886,11 @@
 		height: 19px;
 	}
 
+
 	.sform__cb {
 		margin-top: 22px;
 		padding: 0 0 0 30px;
-		max-width: 185px;
+		max-width: 250px;
 	}
 
 	.sform button[type="submit"] {
@@ -967,9 +1016,10 @@
 		}
 	}
 	.s8 {
-		margin-top: -2px;
-		padding: 20px 0 80px;
+		margin-top: -100px;
+		padding: 0px 0 80px;
 		height: auto;
+		background-position: 0 100px;
 	}
 
 	.s8__title {
@@ -1031,9 +1081,7 @@
 		padding: 10px;
 	}
 
-	.s8-map__main-inner {
-		padding: 135.5% 0 0;
-	}
+
 
 	.s8__clouds img:nth-child(1) {
 		display: none;
@@ -1066,6 +1114,9 @@
 	}
 
 	#popup-1 {
+		.sform {
+			height: 450px;
+		}
 		
 	}
 

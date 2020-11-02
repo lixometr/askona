@@ -9,7 +9,7 @@ switcherItems.on('click', function () {
     let offset = activeItem.attr('data-offset') || 0
 
     $('html, body').animate({
-        scrollTop: top + parseInt(offset)
+        scrollTop: top + parseInt(offset) 
     }, 300)
 })
 const check = () => {
@@ -22,14 +22,14 @@ const check = () => {
         const offset = $(this).attr('data-offset') || 0
         const sTop = $(id).offset().top
         const scrollTop = $(window).scrollTop()
-        if (scrollTop >= sTop + parseInt(offset) - 10) {
+        if (scrollTop >= sTop + parseInt(offset) - 20 ) {
             switcherItems.eq(index).addClass('switcher__item_active')
             menuItems.eq(index).addClass('header__link_active')
         } else {
 
         }
-
     })
 }
+check()
 
-$(window).on('scroll', throttle(check, 300))
+$(window).on('scroll', throttle(check, 100))

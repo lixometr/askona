@@ -4,6 +4,7 @@ import Preloader from "./preloader"
 import $ from "jquery"
 require('./ismac')
 global.$ = $
+global.jQuery = $
 gsap.registerPlugin(ScrollTrigger)
 ScrollTrigger.defaults({
     markers: false
@@ -16,6 +17,7 @@ import Popup from "./popup"
 global.Stars = Stars
 const preloader = new Preloader
 // preloader.show()
+
 $(window).on('load', () => {
     preloader.hide()
     new Popup('#popup-1', '.s7__btn')
@@ -27,7 +29,8 @@ $(window).on('load', () => {
     require('./animations/section6')
     require('./animations/section8')
     require('./cursorFollow')
-require('jquery-touchswipe')
+    require('./forms')
+    require('jquery-touchswipe')
 
     require('./slider1')
     require('./slider2')
@@ -36,7 +39,7 @@ require('jquery-touchswipe')
     require('./scrollTo')
     require('./sticks')
     require('./scrollArrow')
-// require('./smooth-scroll.js')
+    // require('./smooth-scroll.js')
 
     require('./smoothScroll')
 })

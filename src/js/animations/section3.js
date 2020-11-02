@@ -5,23 +5,23 @@ gsap.to(image1, {
     scrollTrigger: {
         trigger: '.s3',
         pin: false,
-        start: "top bottom",
-        end: "+=1000",
+        start: "top bottom-=200px",
+        end: "+=1200",
         scrub: 1.8, // fix can be in seconds (smooth delay)
         // once: true
 
     },
-    y: '-=160px'
+    y: '-=180px'
 })
 gsap.to(image2, {
     scrollTrigger: {
         trigger: '.s3',
         pin: false,
         start: "top top",
-        end: "+=1600",
+        end: "+=1400",
         scrub: 1.8, // fix can be in seconds (smooth delay)
         // once: true
 
     },
-    y: '-=100px'
+    y: '-=120px'
 })

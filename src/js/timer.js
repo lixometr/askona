@@ -1,4 +1,4 @@
-import SvgModel from "./svgModel"
+// import SvgModel from "./svgModel"
 const date = new Date(2020, 11, 20, 12)
 
 
@@ -22,9 +22,9 @@ class Timer {
         this.minutesSvg = this.minutesWrapper.find('svg')
 
 
-        this.daysTimer = new SvgModel(this.daysSvg, 500)
-        this.hoursTimer = new SvgModel(this.hoursSvg, 400)
-        this.minutesTimer = new SvgModel(this.minutesSvg, 300)
+        // this.daysTimer = new SvgModel(this.daysSvg, 500)
+        // this.hoursTimer = new SvgModel(this.hoursSvg, 400)
+        // this.minutesTimer = new SvgModel(this.minutesSvg, 300)
         this.init()
     }
 
@@ -74,9 +74,9 @@ class Timer {
     }
     init() {
 
-        this.daysTimer.start()
-        this.minutesTimer.start()
-        this.hoursTimer.start()
+        // this.daysTimer.start()
+        // this.minutesTimer.start()
+        // this.hoursTimer.start()
         this.start()
     }
 }

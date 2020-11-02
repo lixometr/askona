@@ -12,7 +12,8 @@ const check = () => {
     }
 }
 check()
-$('.bottom-btn').on('click', () => {
+$('.bottom-btn').on('click', (e) => {
+    e.preventDefault()
     if ($('.bottom-btn').hasClass('top')) {
         isAnimating = true
         $('html, body').animate({

@@ -1,2 +1,12 @@
 node_modules
 package-lock.json
+prod
+dist
+composer.json
+composer.lock
+key.ppk
+test.ppk
+**/*.php
+vendor
+src/credentials.json
+src/credentials_o.json
